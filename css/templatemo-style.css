@@ -17,9 +17,9 @@ body
 #home .fp-slide,
 #home .fp-tableCell,
 
-#work,
-#work .fp-slide,
-#work .fp-tableCell,
+#skills,
+#skills .fp-slide,
+#skills .fp-tableCell,
 
 #about,
 #about .fp-slide,
@@ -51,7 +51,7 @@ h1,h2,h3,h4,h5
 /* end all heading */
 
 /* start all section */
-#work, #about, #portfolio, #contact
+#skills, #about, #portfolio, #contact
     {
         padding-top: 100px;
         padding-bottom: 120px;
@@ -102,22 +102,25 @@ h1,h2,h3,h4,h5
     }
 /* end home */
 
-/* start work */
-#work
+/* start skills */
+#skills
     {
         background: #1a1a1a;
     }
-#work h2
+#skills h2
     {
         text-align: center;
     }
 
-#work .media
-    {
-      margin-top: 30px;
+#skills .media {
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+    gap: 10px;
+    color: white;
     }
 	
-#work .media .fa
+#skills .media .fa
     {
         border: 2px solid #ffffff;
         border-radius: 50%;
@@ -131,18 +134,18 @@ h1,h2,h3,h4,h5
         vertical-align: middle;
         transition: all 0.4s ease-in;
     }
-#work .media .fa:hover
+#skills .media .fa:hover
     {
         background: #ffffff;
         cursor: pointer;
     }
-#work .media .media-heading
+#skills .media .media-heading
     {
         font-weight: 600;
         font-size: 20px;
-        padding-bottom: 10px;
+        /* padding-bottom: 10px; */
     }
-/* end work */
+/* end skills */
 
 /* start about */
 #about h4
