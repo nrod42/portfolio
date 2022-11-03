@@ -87,19 +87,48 @@ h1,h2,h3,h4,h5 {
 /* end about */
 
 /* start skills */
-#skills
-    {
-        background: #000000;
-    }
+#skills {
+    /* background: #000000; */
+    background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(90,92,106,1) 0%, rgba(32,45,58,1) 81.3% );
+    font-weight: bold;  
+}
+
+/* #skills .skillsSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+} */
+
+#skills .skillsTitle {
+    padding-bottom: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#skills .skillItems {
+    display: grid;
+    /* grid-template-columns: 1fr 1fr 1fr; */
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    place-items: center;
+}
+
+#skill .skillItem {
+
+}
+
 #skills h2
     {
         text-align: center;
     }
 
 #skills .media {
+    width: 200px;
     display: flex;
     align-items: center;
-    margin-top: 30px;
+    padding: 15px 0;
+    /* margin-top: 30px; */
     gap: 10px;
     color: white;
 }
@@ -120,8 +149,10 @@ h1,h2,h3,h4,h5 {
 
 /* start projects */
 #projects {
-    background: #1a1a1a;
+    /* background: #1a1a1a; */
+    background-image: radial-gradient( circle 862px at 3.9% 23.8%,  rgba(17,58,93,1) 0%, rgba(18,51,80,1) 90.8% );
     text-align: center;
+    color: white;
 }
 
 #projects h2 {
