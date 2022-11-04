@@ -123,22 +123,23 @@
 
 		<!-- start portfolio -->
 		<div id="projects" class="section">
-			<div class="container">
-	
-					<div class="col-md-12">
-						<h2>PROJECTS</h2>
+			<div class="projectsTitle">
+				<h2>PROJECTS</h2>
+			</div>
+			<div class="projectsContainer">
+
+				<div class="project">
+					<div class="projectImgWrapper">
+						<img src="images/track-homepage.png" class="projectImg" alt="project img">
 					</div>
-				
-				<div class="row">
-					<div class="col-md-6"><img src="images/track-homepage.png" class="projectImg" alt="project img"></div>
-					<div class="col-md-6">
+					<div class="projectInfo">
 						<h4>TV/Movie Tracker</h4>
-						<div style="display: flex; gap: 20px; align-items: center; justify-content: center; margin: 20px 0;">
-							<img src="./images/html-logo.svg" style="height: 30px;">
-							<img src="./images/css-logo.svg" style="height: 30px;">
-							<img src="./images/js-logo.svg" style="height: 30px;">
-							<img src="./images/react-logo.svg" style="height: 30px;">
-							<img src="./images/bootstrap-logo.svg" style="height: 30px;">
+						<div class="techIcons">
+							<img class="icon" src="./images/html-logo.svg">
+							<img class="icon" src="./images/css-logo.svg">
+							<img class="icon" src="./images/js-logo.svg">
+							<img class="icon" src="./images/react-logo.svg">
+							<img class="icon" src="./images/bootstrap-logo.svg">
 						</div>
 						<p>Find TV shows and movies. View show/movie details and see recommended/similair shows.</p>
 						<p>Users can add movies and shows to multiple watchlists for easy tracking. All lists are also saved using local storage.</p>
@@ -153,21 +154,22 @@
 						</div>
 					</div>
 				</div>
-				<div class="row">
-					<div class="col-md-6"><img src="images/simpsons-memory-homepage.png" class="projectImg" alt="portfolio img"></div>
-					<div class="col-md-6">
+				<div class="project">
+					<div class="projectImgWrapper">
+						<img src="images/simpsons-memory-homepage.png" class="projectImg" alt="portfolio img">
+					</div>
+					<div class="projectInfo">
 						<h4>Memory Game</h4>
-						<div style="display: flex; gap: 20px; align-items: center; justify-content: center; margin: 20px 0;">
-							<img src="./images/html-logo.svg" style="height: 30px;">
-							<img src="./images/css-logo.svg" style="height: 30px;">
-							<img src="./images/js-logo.svg" style="height: 30px;">
-							<img src="./images/react-logo.svg" style="height: 30px;">
+						<div class="techIcons">
+							<img class="icon" src="./images/html-logo.svg" >
+							<img class="icon" src="./images/css-logo.svg">
+							<img class="icon" src="./images/js-logo.svg">
+							<img class="icon" src="./images/react-logo.svg">
 						</div>
-						<p>Simpsons themed memory game where the player must click each character only once until every character is clicked.</p>
-						<p>The characters are shuffled on every click and both the current and best score are kept using local storage.</p>
+						<p class="projectDesc">Simpsons themed memory game where the player must click each character only once until every character is clicked. The characters are shuffled on every click and both the current and best score are kept using local storage.</p>
 						<div class="projectLinks">
 							<div>
-								<a class="btn btn-danger" href="https://nrod42.github.io/memory_game/" role="button" target="_blank"><img src="/images/link.svg">Live Demo</a>
+								<a class="btn btn-danger" href="https://nrod42.github.io/memory_game/" target="_blank" aria-label="memory game github repo"><img src="/images/link.svg">Live Demo</a>
 							</div>
 							<div>
 								<a class="btn btn-danger" href="https://github.com/nrod42/memory_game" role="button" target="_blank"><img src="/images/github-logo.svg">Github</a>
@@ -175,16 +177,18 @@
 						</div>
 					</div>
 				</div>
-				<div class="row">
-					<div class="col-md-6"><img src="images/portfolio-img3.jpg" class="projectImg" alt="portfolio img"></div>
-					<div class="col-md-6">
+				<div class="project">
+					<div class="projectImgWrapper">
+						<img src="images/portfolio-img3.jpg" class="projectImg" alt="portfolio img">
+					</div>
+					<div class="projectInfo">
 						<h4>Resume Builder</h4>
-						<div style="display: flex; gap: 20px; align-items: center; justify-content: center; margin: 20px 0;">
-							<img src="./images/html-logo.svg" style="height: 30px;">
-							<img src="./images/css-logo.svg" style="height: 30px;">
-							<img src="./images/js-logo.svg" style="height: 30px;">
-							<img src="./images/react-logo.svg" style="height: 30px;">
-							<img src="./images/bootstrap-logo.svg" style="height: 30px;">
+						<div class="techIcons">
+							<img class="icon" src="./images/html-logo.svg">
+							<img class="icon" src="./images/css-logo.svg">
+							<img class="icon" src="./images/js-logo.svg">
+							<img class="icon" src="./images/react-logo.svg">
+							<img class="icon" src="./images/bootstrap-logo.svg">
 						</div>
 						<p>Generates a resume based on form inputs. User inputs info in each page then end result shows. Features form handling, React Hooks, React Router, and Framer Motion.</p>
 						<div class="projectLinks">
@@ -198,14 +202,16 @@
 						</div>
 					</div>
 				</div>
-				<div class="row">
-					<div class="col-md-6"><img src="images/weather-app-homepage.png" class="projectImg" alt="portfolio img"></div>
-					<div class="col-md-6">
+				<div class="project">
+					<div class="projectImgWrapper">
+						<img src="images/weather-app-homepage.png" class="projectImg" alt="portfolio img">
+					</div>
+					<div class="projectInfo">
 						<h4>Weather App</h4>
-						<div style="display: flex; gap: 20px; align-items: center; justify-content: center; margin: 20px 0;">
-							<img src="./images/html-logo.svg" style="height: 30px;">
-							<img src="./images/css-logo.svg" style="height: 30px;">
-							<img src="./images/js-logo.svg" style="height: 30px;">
+						<div class="techIcons">
+							<img class="icon" src="./images/html-logo.svg">
+							<img class="icon" src="./images/css-logo.svg">
+							<img class="icon" src="./images/js-logo.svg">
 						</div>
 						<p>A weather app that shows current weather for any location. It uses the OpenWeatherMap API to fetch current weather. The user can switch between fahrenheit and celsius. Dynamic background changes based on the time of day.</p>
 						<div class="projectLinks">
@@ -218,14 +224,16 @@
 						</div>
 					</div>
 				</div>
-				<div class="row">
-					<div class="col-md-6"><img src="images/todo-app-homepage.png" class="projectImg" alt="portfolio img"></div>
-					<div class="col-md-6">
+				<div class="project">
+					<div class="projectImgWrapper">
+						<img src="images/todo-app-homepage.png" class="projectImg" alt="portfolio img">
+					</div>
+					<div class="projectInfo">
 						<h4>To-Do List</h4>
-						<div style="display: flex; gap: 20px; align-items: center; justify-content: center; margin: 20px 0;">
-							<img src="./images/html-logo.svg" style="height: 30px;">
-							<img src="./images/css-logo.svg" style="height: 30px;">
-							<img src="./images/js-logo.svg" style="height: 30px;">
+						<div class="techIcons">
+							<img class="icon" src="./images/html-logo.svg">
+							<img class="icon" src="./images/css-logo.svg">
+							<img class="icon" src="./images/js-logo.svg">
 						</div>
 						<p>To-Do list built using JavaScript. Users can create tasks andadd them to project and add tasks if needed. Users can aslo filter tasks to view ones that are due today, later in the week, and compolete.</p>
 						<div class="projectLinks">
@@ -279,7 +287,6 @@
 			<p>© 2022 - Nigel Rodriguez</p>
 		</footer>
 		<!-- end footer -->
-
 	</div>
 	</body>
 </html>
