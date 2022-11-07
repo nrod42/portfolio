@@ -6,9 +6,11 @@ html {
     scroll-behavior: smooth;
 }
 
-body
-{
-	background: #000000;
+body {
+    /* background: hsla(225, 100%, 11%, 1);
+    background: linear-gradient(360deg, hsla(225, 100%, 11%, 1) 0%, hsla(211, 100%, 28%, 1) 100%); */
+    background: hsla(160, 50%, 51%, 1);
+    background: linear-gradient(180deg, hsla(160, 50%, 51%, 1) 0%, hsla(247, 60%, 21%, 1) 100%);
 	color: #999;
 	font-family: 'Raleway', sans-serif;
 	font-size: 16px;
@@ -17,16 +19,21 @@ body
 
 /* start all heading */
 h1,h2,h3,h4,h5 {
-    color: #ffffff;
+    color: #F2EFEA;
     font-weight: bold;
 }
 /* end all heading */
 
 .navbar {
-    opacity: 0.9;
+    /* background-color: #292F36 !important; */
+    opacity: 0.98;
     position: fixed;
     width: 100%;
     z-index: 1;
+}
+
+.navbar * {
+    color: white;
 }
 
 .navbar li:hover {
@@ -36,23 +43,21 @@ h1,h2,h3,h4,h5 {
 /* start all section */
 #about, #skills, #projects, #contact {
     padding-top: 100px;
-    padding-bottom: 120px;
+    padding-bottom: 70px;
 }
 /* end all section */
 
 /* start home */       
 #home {
-    background: url('../images/home.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    padding-top: 120px;
-    padding-bottom: 140px;
+    background-color: #1a1a1a;
+    padding-top: 140px;
+    padding-bottom: 160px;
     text-align: center;
-    /* margin-top: 100px; */
 }
 
 #home h1 {
     border: 2px solid #D43F52;
+    border-radius: 10px;
     color: #D43F52;
     display: inline-block;
     letter-spacing: 6px;
@@ -77,29 +82,38 @@ h1,h2,h3,h4,h5 {
     transition: all 0.4s ease-in-out;
 }
 
-#home .btn:hover
-    {
-        background: #D43F52;
-        border-color: transparent;
-    }
+#home .btn:hover {
+    background: #D43F52;
+    border-color: transparent;
+}
 /* end home */
 
 /* start about */
 #about {
-    background: #1a1a1a;
+    color: #FFFFFF;
 }
 
-#about h4 {
-    padding: 15px 0;
+#about h2{
+    text-align: center;
+    margin-bottom: 50px;
     color: #D43F52;
+}
+
+#about h3 {
+    text-align: center;
+    margin-bottom: 30px;
+    padding: 0;
+    color: white;
+}
+
+#about .resumeLinkWrapper {
+    text-align: center;
 }
 /* end about */
 
 /* start skills */
 #skills {
-    /* background: #000000; */
-    background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(90,92,106,1) 0%, rgba(32,45,58,1) 81.3% );
-    font-weight: bold;  
+    font-weight: bold; 
 }
 
 #skills .skillsTitle {
@@ -111,46 +125,33 @@ h1,h2,h3,h4,h5 {
 
 #skills .skillItems {
     display: grid;
-    /* grid-template-columns: 1fr 1fr 1fr; */
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     place-items: center;
 }
 
 #skills h2 {
+    color: #D43F52;
     text-align: center;
     margin: 0;
 }
 
-#skills .media {
+#skills .skill {
     width: 200px;
     display: flex;
     align-items: center;
     padding: 15px 0;
-    /* margin-top: 30px; */
     gap: 10px;
     color: white;
 }
 	
-#skills .media .fa {
-    border: 2px solid #ffffff;
-    border-radius: 50%;
-    color: #D43F52;
-    font-size: 24px;
-    margin-right: 24px;
-    width: 60px;
-    height: 60px;
-    line-height: 55px;
-    text-align: center;
-    vertical-align: middle;
-    transition: all 0.4s ease-in;
-}
-
 /* start projects */
 #projects {
-    /* background: #1a1a1a; */
-    background-image: radial-gradient( circle 862px at 3.9% 23.8%,  rgba(17,58,93,1) 0%, rgba(18,51,80,1) 90.8% );
     text-align: center;
     color: white;
+}
+
+#projects h2 {
+    color: #D43F52;
 }
 
 #projects .projectsContainer {
@@ -165,11 +166,10 @@ h1,h2,h3,h4,h5 {
 #projects .project {
     display: flex;
     flex-wrap: wrap;
-    gap: 50px;
+    gap: 80px;
     align-items: center;
     justify-content: center;
     width: 100%;
-    /* margin: 0 20px; */
 }
 
 #projects .projectsTitle {
@@ -177,12 +177,9 @@ h1,h2,h3,h4,h5 {
 }
 
 #projects .projectImgWrapper, #projects .projectInfo {
-    /* height: 100%; */
     min-width: 310px;
-    /* max-width: 500px; */
     width: 500px;
 }
-
 
 #projects .projectInfo {
     display: flex;
@@ -221,8 +218,7 @@ h1,h2,h3,h4,h5 {
     display: flex; 
     gap: 20px; 
     align-items: center;
-    justify-content: center; 
-    /* margin: 20px 0; */
+    justify-content: center;
 }
 
 #projects .projectLinks {
@@ -231,16 +227,12 @@ h1,h2,h3,h4,h5 {
     align-items: center;
     justify-content: center;
 }
-
 /* end projects */
 
-
-
-
 /* start contact */
-#contact {
+/* #contact {
     background: #1a1a1a;
-    /* text-align: center; */
+    text-align: center;
 }
 
 #oontact h2 {
@@ -250,13 +242,12 @@ h1,h2,h3,h4,h5 {
 #contact .contactLinks {
     display: flex;
     gap: 20px;
-}
-
-
+} */
 /* end contact */
 
 /* start footer */
 footer {
+    background-color: #1a1a1a;
     padding-top: 40px;
     padding-bottom: 20px;
     display: flex;
@@ -266,8 +257,18 @@ footer {
     gap: 20px;
 }
 
-.contactLinks {
+footer .contactLinks {
     display: flex;
     gap: 20px;
 } 
+
+footer .contactLinks div {
+    background-color: white; 
+    border-radius: 50%; 
+    border: 2px solid white;
+}
+
+footer img {
+    height: 30px; 
+}
 /* end footer */
