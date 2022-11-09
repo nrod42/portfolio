@@ -7,8 +7,6 @@ html {
 }
 
 body {
-    /* background: hsla(225, 100%, 11%, 1);
-    background: linear-gradient(360deg, hsla(225, 100%, 11%, 1) 0%, hsla(211, 100%, 28%, 1) 100%); */
     background: hsla(160, 50%, 51%, 1);
     background: linear-gradient(180deg, hsla(160, 50%, 51%, 1) 0%, hsla(247, 60%, 21%, 1) 100%);
 	color: #999;
@@ -228,22 +226,6 @@ h1,h2,h3,h4,h5 {
     justify-content: center;
 }
 /* end projects */
-
-/* start contact */
-/* #contact {
-    background: #1a1a1a;
-    text-align: center;
-}
-
-#oontact h2 {
-    text-align: center;
-}
-
-#contact .contactLinks {
-    display: flex;
-    gap: 20px;
-} */
-/* end contact */
 
 /* start footer */
 footer {
