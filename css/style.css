@@ -13,6 +13,7 @@ body {
 	font-family: 'Raleway', sans-serif;
 	font-size: 16px;
 	font-weight: 400;
+    overflow-x: hidden;
 }
 
 /* start all heading */
@@ -23,7 +24,6 @@ h1,h2,h3,h4,h5 {
 /* end all heading */
 
 .navbar {
-    /* background-color: #292F36 !important; */
     opacity: 0.98;
     position: fixed;
     width: 100%;
