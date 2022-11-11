@@ -186,6 +186,10 @@ h1,h2,h3,h4,h5 {
     gap: 20px;
 }
 
+#projects p {
+    text-align: left;
+}
+
 #projects .projectImg {
     width: 100%;
     height: 100%;
@@ -239,18 +243,18 @@ footer {
     gap: 20px;
 }
 
-footer .contactLinks {
+.contactLinks {
     display: flex;
     gap: 20px;
 } 
 
-footer .contactLinks div {
+.contactLinks div {
     background-color: white; 
     border-radius: 50%; 
     border: 2px solid white;
 }
 
-footer img {
+.contactLinks img {
     height: 30px; 
 }
 /* end footer */
