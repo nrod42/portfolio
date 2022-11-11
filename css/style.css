@@ -104,9 +104,30 @@ h1,h2,h3,h4,h5 {
     color: white;
 }
 
+#about h4 {
+    padding: 0;
+    margin: 0;
+}
+
 #about .resumeLinkWrapper {
     text-align: center;
 }
+
+#about .contactLinks {
+    display: flex;
+    gap: 20px;
+} 
+
+#about .contactLinks div {
+    background-color: white; 
+    border-radius: 50%; 
+    border: 2px solid white;
+}
+
+#about .contactLinks img {
+    height: 30px; 
+}
+
 /* end about */
 
 /* start skills */
@@ -243,18 +264,29 @@ footer {
     gap: 20px;
 }
 
-.contactLinks {
+footer .contactLinks {
     display: flex;
     gap: 20px;
 } 
 
-.contactLinks div {
+footer .contactLinks div {
     background-color: white; 
     border-radius: 50%; 
     border: 2px solid white;
 }
 
-.contactLinks img {
+footer .contactLinks img {
     height: 30px; 
 }
-/* end footer */
+/* end footer */   j
+
+footer {
+    background-color: #1a1a1a;
+    padding-top: 40px;
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
