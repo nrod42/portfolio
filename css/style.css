@@ -61,6 +61,12 @@ h1,h2,h3,h4,h5 {
     letter-spacing: 6px;
     padding: 25px 35px;
     margin: 30px 0;
+    transition: all  0.5s ease;
+}
+
+#home h1:hover {
+    background-color:  #D43F52;
+    color: #FFFFFF;
 }
 
 #home h2 {
@@ -83,6 +89,24 @@ h1,h2,h3,h4,h5 {
 #home .btn:hover {
     background: #D43F52;
     border-color: transparent;
+}
+
+#home .contactLinks div {
+    height: 40px;
+    background-color: white; 
+    border-radius: 50%; 
+    border: 2px solid white;
+    transition: height 0.5s ease;
+}
+
+#home .contactLinks div:hover {
+    height: 50px;
+    background-color: #D43F52;
+    border: 2px solid #D43F52;
+}
+
+#home .contactLinks img {
+    height: 100%; 
 }
 /* end home */
 
@@ -113,19 +137,10 @@ h1,h2,h3,h4,h5 {
     text-align: center;
 }
 
-#about .contactLinks {
+#home .contactLinks {
+    margin-top: 50px;
     display: flex;
     gap: 20px;
-} 
-
-#about .contactLinks div {
-    background-color: white; 
-    border-radius: 50%; 
-    border: 2px solid white;
-}
-
-#about .contactLinks img {
-    height: 30px; 
 }
 
 /* end about */
@@ -270,13 +285,20 @@ footer .contactLinks {
 } 
 
 footer .contactLinks div {
+    height: 30px;
     background-color: white; 
     border-radius: 50%; 
     border: 2px solid white;
 }
 
+footer .contactLinks div:hover {
+    filter: brightness(85%);
+}
+
+
+
 footer .contactLinks img {
-    height: 30px; 
+    height: 100%; 
 }
 /* end footer */   j
 
