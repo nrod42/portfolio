@@ -11,7 +11,7 @@ body {
     background: linear-gradient(180deg, hsla(160, 50%, 51%, 1) 0%, hsla(247, 60%, 21%, 1) 100%);
 	color: #999;
 	font-family: 'Raleway', sans-serif;
-	font-size: 16px;
+	font-size: 18px;
 	font-weight: 400;
     overflow-x: hidden;
 }
@@ -20,6 +20,17 @@ body {
 h1,h2,h3,h4,h5 {
     color: #F2EFEA;
     font-weight: bold;
+}
+
+h2::after{
+    content: "";
+    height: 120px;
+    width: 7px;
+    transform: skew(-18deg) translateX(-50%) translateY(-10%) rotate(90deg);
+    left: 50%;
+    position: absolute;
+    background: #D43F52;
+
 }
 /* end all heading */
 
@@ -53,6 +64,13 @@ h1,h2,h3,h4,h5 {
     text-align: center;
 }
 
+#home .homeWrapper {
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center;
+}
+
 #home h1 {
     border: 2px solid #D43F52;
     border-radius: 10px;
@@ -73,6 +91,14 @@ h1,h2,h3,h4,h5 {
     padding-bottom: 10px;
 }
 
+#home .mainBtnsWrapper {
+    display: flex; 
+    gap: 20px; 
+    flex-wrap: wrap; 
+    align-items: center; 
+    justify-content: center;
+}
+
 #home .btn {
     background: transparent;
     border: 2px solid #ffffff;
@@ -89,6 +115,12 @@ h1,h2,h3,h4,h5 {
 #home .btn:hover {
     background: #D43F52;
     border-color: transparent;
+}
+
+#home .contactLinks {
+    margin-top: 50px;
+    display: flex;
+    gap: 20px;
 }
 
 #home .contactLinks div {
@@ -130,17 +162,11 @@ h1,h2,h3,h4,h5 {
 
 #about h4 {
     padding: 0;
-    margin: 0;
+    margin-bottom: 20px;
 }
 
 #about .resumeLinkWrapper {
     text-align: center;
-}
-
-#home .contactLinks {
-    margin-top: 50px;
-    display: flex;
-    gap: 20px;
 }
 
 /* end about */
@@ -176,6 +202,10 @@ h1,h2,h3,h4,h5 {
     padding: 15px 0;
     gap: 10px;
     color: white;
+}
+
+#skills .skill img {
+    height: 50px;
 }
 	
 /* start projects */
@@ -285,17 +315,15 @@ footer .contactLinks {
 } 
 
 footer .contactLinks div {
-    height: 30px;
+    height: 40px;
     background-color: white; 
     border-radius: 50%; 
     border: 2px solid white;
 }
 
 footer .contactLinks div:hover {
-    filter: brightness(85%);
+    background-color: #D43F52;
 }
-
-
 
 footer .contactLinks img {
     height: 100%; 
