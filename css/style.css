@@ -32,6 +32,7 @@ h2::after{
     background: #D43F52;
 
 }
+
 /* end all heading */
 
 .navbar {
@@ -51,8 +52,8 @@ h2::after{
 
 /* start all section */
 #about, #skills, #projects, #contact {
-    padding-top: 100px;
-    padding-bottom: 70px;
+    padding-top: 85px;
+    padding-bottom: 50px;
 }
 /* end all section */
 
@@ -218,39 +219,6 @@ h2::after{
     color: #D43F52;
 }
 
-#projects .projectsContainer {
-    margin: 0 5%;
-    display: flex;
-    flex-direction: column;
-    gap: 100px;
-    align-items: center;
-    justify-content: center;
-}
-
-#projects .project {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 80px;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-}
-
-#projects .projectsTitle {
-    margin-bottom: 50px;
-}
-
-#projects .projectImgWrapper, #projects .projectInfo {
-    min-width: 310px;
-    width: 500px;
-}
-
-#projects .projectInfo {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    gap: 20px;
-}
 
 #projects p {
     text-align: left;
@@ -271,11 +239,6 @@ h2::after{
 
 #projects a > img {
     height: 1.2rem;
-}
-
-#projects h4, #projects p {
-    margin: 0;
-    padding: 0;
 }
 
 #projects .icon {
@@ -328,15 +291,4 @@ footer .contactLinks div:hover {
 footer .contactLinks img {
     height: 100%; 
 }
-/* end footer */   j
-
-footer {
-    background-color: #1a1a1a;
-    padding-top: 40px;
-    padding-bottom: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
-}
+/* end footer */

@@ -9,6 +9,7 @@
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 		<!-- google font -->
 		<link href='http://fonts.googleapis.com/css?family=Raleway:400,300,700,800' rel='stylesheet' type='text/css'>
+		<link rel="shortcut icon" href="/n-icon.ico" type="image/x-icon">
 		<link rel="stylesheet" href="css/style.css">
 		<script src="./js/bootstrap.min.js" defer></script>
 		<script src="./js/index.js" defer></script>
@@ -55,11 +56,6 @@
 						</div>	
 						<div class="contactLinks">
 							<div>
-								<a href="mailto:rodrigun@bu.edu" target="_blank">
-									<img src="./images/email.png" alt="E-mail Icon">
-								</a>
-							</div>
-							<div>
 								<a href="https://github.com/nrod42" target="_blank">
 									<img src="./images/github-logo.webp" alt="GitHub Icon">
 								</a>
@@ -69,6 +65,11 @@
 									<img src="./images/linkedin_logo.png" alt="LinkedIn Icon">
 								</a>
 							</div>
+							<div>
+								<a href="mailto:rodrigun@bu.edu" target="_blank">
+									<img src="./images/email.png" alt="E-mail Icon">
+								</a>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -76,207 +77,205 @@
 			<!-- end home -->
 
 			<!-- start skills -->
-			<div id="skills" class="section">
-				<div class="container">
-					<div class="skillsTitle">
-						<h2>SKILLS</h2>
-					</div>	
-					<div class="skillItems">			
-						<div class="skill">
-							<img src="./images/html-logo.svg" alt="HTML Icon">
-							<span>HTML</span>
-						</div>									
-						<div class="skill">
-							<img src="./images/css-logo.svg" alt="CSS Icon">
-							<span>CSS</span>
-						</div>										
-						<div class="skill">
-							<img src="./images/js-logo.svg" alt="JavaScript Icon">
-							<span>JavaScript</span>
-						</div>
-						<div class="skill">
-							<img src="./images/react-logo.svg" alt="React Icon">
-							<span>React</span>
-						</div>
-						<div class="skill">
-							<img src="./images/bootstrap-logo.svg" alt="Bootstrap Icon">
-							<span>Bootstrap</span>
-						</div>					
-						<div class="skill">
-							<img src="./images/sass-logo.svg" alt="SASS Icon">
-							<span>Sass</span>
-						</div>																					
-						<div class="skill">
-							<img src="./images/git-logo.svg" alt="Git Icon">
-							<span>Git</span>
-						</div>
-						<div class="skill">
-							<img src="./images/webpack-logo.svg" alt="Webpack Icon">
-							<span>Webpack</span>
-						</div>	
+			<div id="skills" class="container mt-5 mb-5">
+				<h2 class="mb-5">SKILLS</h2>
+				<div class="skillItems">			
+					<div class="skill">
+						<img src="./images/html-logo.svg" alt="HTML Icon">
+						<span>HTML</span>
+					</div>									
+					<div class="skill">
+						<img src="./images/css-logo.svg" alt="CSS Icon">
+						<span>CSS</span>
+					</div>										
+					<div class="skill">
+						<img src="./images/js-logo.svg" alt="JavaScript Icon">
+						<span>JavaScript</span>
+					</div>
+					<div class="skill">
+						<img src="./images/react-logo.svg" alt="React Icon">
+						<span>React</span>
+					</div>
+					<div class="skill">
+						<img src="./images/bootstrap-logo.svg" alt="Bootstrap Icon">
+						<span>Bootstrap</span>
 					</div>					
+					<div class="skill">
+						<img src="./images/sass-logo.svg" alt="SASS Icon">
+						<span>Sass</span>
+					</div>																					
+					<div class="skill">
+						<img src="./images/git-logo.svg" alt="Git Icon">
+						<span>Git</span>
+					</div>
+					<div class="skill">
+						<img src="./images/webpack-logo.svg" alt="Webpack Icon">
+						<span>Webpack</span>
+					</div>	
 				</div>
 			</div>
 			<!-- end skills -->
 
 			<!-- start projects -->
-			<div id="projects" class="section">
-				<div class="projectsTitle">
-					<h2>PROJECTS</h2>
-				</div>
-				<div class="projectsContainer">
-					<div class="project">
-						<div class="projectImgWrapper">
+			<div id="projects" class="container mt-5 mb-5">
+				<h2 class="mb-5">PROJECTS</h2>
+				<div class="row mb-5">
+					<div class="col-lg-6 col-sm-12 mb-5">
+						<h4 class="mb-4">TV/Movie Tracker</h4>
+						<div class="mb-4">
 							<img src="./images/track-homepage.png" class="projectImg" alt="project img">
 						</div>
-						<div class="projectInfo">
-							<h4>TV/Movie Tracker</h4>
-							<div class="techIcons">
-								<img class="icon" src="./images/html-logo.svg" alt="HTML Icon">
-								<img class="icon" src="./images/css-logo.svg" alt="CSS Icon">
-								<img class="icon" src="./images/js-logo.svg" alt="JavaScript Icon">
-								<img class="icon" src="./images/react-logo.svg" alt="React Icon">
-								<img class="icon" src="./images/bootstrap-logo.svg" alt="Bootstrap Icon">
+						<div class="mb-4 techIcons">
+							<img class="icon" src="./images/html-logo.svg" alt="HTML Icon">
+							<img class="icon" src="./images/css-logo.svg" alt="CSS Icon">
+							<img class="icon" src="./images/js-logo.svg" alt="JavaScript Icon">
+							<img class="icon" src="./images/react-logo.svg" alt="React Icon">
+							<img class="icon" src="./images/bootstrap-logo.svg" alt="Bootstrap Icon">
+						</div>
+						<p class="mb-4">
+							Browse TV shows and movies, view show/movie details, and see recommended and similar selections. 
+							Users can add any TV show or movie to multiple watch lists for easy tracking and all lists are saved using local storage. 
+							All TV show and movie data is fetched using The Movie Database API. 
+							This project implemented the use of React Hooks and React Router.
+						</p>
+						<div class="mb-4 projectLinks">
+							<div>
+								<a class="btn btn-danger" href="https://nrod42.github.io/tv-show-tracker/" role="button" target="_blank">
+									<img src="./images/link.webp" alt="Link Icon">
+									Live Site
+								</a>
 							</div>
-							<p>Browse TV shows and movies, view show/movie details, and see recommended and similar selections. 
-								Users can add any TV show or movie to multiple watch lists for easy tracking and all lists are saved using local storage. 
-								All TV show and movie data is fetched using The Movie Database API. 
-								This project implemented the use of React Hooks and React Router.</p>
-							<div class="projectLinks">
-								<div>
-									<a class="btn btn-danger" href="https://nrod42.github.io/tv-show-tracker/" role="button" target="_blank">
-										<img src="./images/link.webp" alt="Link Icon">
-										Live Site
-									</a>
-								</div>
-								<div>
-									<a class="btn btn-danger" href="https://github.com/nrod42/tv-show-tracker" role="button" target="_blank">
-										<img src="./images/github-logo.webp" alt="GitHub Icon">
-										Source Code
-									</a>
-								</div>
+							<div>
+								<a class="btn btn-danger" href="https://github.com/nrod42/tv-show-tracker" role="button" target="_blank">
+									<img src="./images/github-logo.webp" alt="GitHub Icon">
+									Source Code
+								</a>
 							</div>
 						</div>
 					</div>
-					<div class="project">
-						<div class="projectImgWrapper">
+					<div class="col-lg-6 col-sm-12">
+						<h4 class="mb-4">Resume Builder</h4>
+						<div class="mb-4">
 							<img src="./images/resume-app-screenshot.webp" class="projectImg" alt="resume creator">
 						</div>
-						<div class="projectInfo">
-							<h4>Resume Builder</h4>
-							<div class="techIcons">
-								<img class="icon" src="./images/html-logo.svg" alt="HTML Icon">
-								<img class="icon" src="./images/css-logo.svg" alt="CSS Icon">
-								<img class="icon" src="./images/js-logo.svg" alt="JavaScript Icon">
-								<img class="icon" src="./images/react-logo.svg" alt="React Icon">
-								<img class="icon" src="./images/bootstrap-logo.svg" alt="Bootstrap Icon">
+						<div class="mb-4 techIcons">
+							<img class="icon" src="./images/html-logo.svg" alt="HTML Icon">
+							<img class="icon" src="./images/css-logo.svg" alt="CSS Icon">
+							<img class="icon" src="./images/js-logo.svg" alt="JavaScript Icon">
+							<img class="icon" src="./images/react-logo.svg" alt="React Icon">
+							<img class="icon" src="./images/bootstrap-logo.svg" alt="Bootstrap Icon">
+						</div>
+						<p class="mb-4">
+							App that generates a resume based on user form inputs. Users are then able to download the generated resume as a PDF. 
+							This project features form handling as well as React Hooks, Router, and Framer Motion.
+						</p>
+						<div class="mb-4 projectLinks">
+							<div>
+								<a class="btn btn-danger" href="https://nrod42.github.io/cv-project" role="button" target="_blank">
+									<img src="./images/link.webp" alt="Link Icon">
+									Live Site
+								</a>
 							</div>
-							<p>App that generates a resume based on user form inputs. Users are then able to download the generated resume as a PDF. 
-								This project features form handling as well as React Hooks, Router, and Framer Motion.</p>
-							<div class="projectLinks">
-								<div>
-									<!-- Needs to update links for this project-->
-									<a class="btn btn-danger" href="https://nrod42.github.io/cv-project" role="button" target="_blank">
-										<img src="./images/link.webp" alt="Link Icon">
-										Live Site
-									</a>
-								</div>
-								<div>
-									<a class="btn btn-danger" href="https://github.com/nrod42/cv-project" role="button" target="_blank">
-										<img src="./images/github-logo.webp" alt="GitHub Icon">
-										Source Code
-									</a>
-								</div>
+							<div>
+								<a class="btn btn-danger" href="https://github.com/nrod42/cv-project" role="button" target="_blank">
+									<img src="./images/github-logo.webp" alt="GitHub Icon">
+									Source Code
+								</a>
 							</div>
 						</div>
 					</div>
-					<div class="project">
-						<div class="projectImgWrapper">
+
+				</div>
+				<div class="row mb-5">
+					<div class="col-lg-6 col-sm-12 mb-5">
+						<h4 class="mb-4">Simpsons Memory Game</h4>
+						<div class="mb-4">
 							<img src="./images/simpsons-memory-homepage.png" class="projectImg" alt="portfolio img">
 						</div>
-						<div class="projectInfo">
-							<h4>Simpsons Memory Game</h4>
-							<div class="techIcons">
-								<img class="icon" src="./images/html-logo.svg" alt="HTML Icon">
-								<img class="icon" src="./images/css-logo.svg" alt="CSS Icon">
-								<img class="icon" src="./images/js-logo.svg" alt="JavaScript Icon">
-								<img class="icon" src="./images/react-logo.svg" alt="React Icon">
+						<div class="mb-4 techIcons">
+							<img class="icon" src="./images/html-logo.svg" alt="HTML Icon">
+							<img class="icon" src="./images/css-logo.svg" alt="CSS Icon">
+							<img class="icon" src="./images/js-logo.svg" alt="JavaScript Icon">
+							<img class="icon" src="./images/react-logo.svg" alt="React Icon">
+						</div>
+						<p class="mb-4">
+							A Simpsons themed memory game where the player must click each character only once until every character is clicked. 
+							The characters are shuffled on every click and both the current and best scores are saved using local storage.
+						</p>
+						<div class="mb-4 projectLinks">
+							<div>
+								<a class="btn btn-danger" href="https://nrod42.github.io/memory_game/" target="_blank" aria-label="memory game github repo">
+									<img src="./images/link.webp" alt="Link Icon">
+									Live Site
+								</a>
 							</div>
-							<p class="projectDesc">A Simpsons themed memory game where the player must click each character only once until every character is clicked. 
-								The characters are shuffled on every click and both the current and best scores are saved using local storage.</p>
-							<div class="projectLinks">
-								<div>
-									<a class="btn btn-danger" href="https://nrod42.github.io/memory_game/" target="_blank" aria-label="memory game github repo">
-										<img src="./images/link.webp" alt="Link Icon">
-										Live Site
-									</a>
-								</div>
-								<div>
-									<a class="btn btn-danger" href="https://github.com/nrod42/memory_game" role="button" target="_blank">
-										<img src="./images/github-logo.webp" alt="GitHub Icon">
-										Source Code
-									</a>
-								</div>
+							<div>
+								<a class="btn btn-danger" href="https://github.com/nrod42/memory_game" role="button" target="_blank">
+									<img src="./images/github-logo.webp" alt="GitHub Icon">
+									Source Code
+								</a>
 							</div>
 						</div>
 					</div>
-					<div class="project">
-						<div class="projectImgWrapper">
+					<div class="col-lg-6 col-sm-12">
+						<h4 class="mb-4">Weather App</h4>
+						<div class="mb-4">
 							<img src="./images/weather-app-homepage.png" class="projectImg" alt="weather app">
 						</div>
-						<div class="projectInfo">
-							<h4>Weather App</h4>
-							<div class="techIcons">
-								<img class="icon" src="./images/html-logo.svg" alt="HTML Icon">
-								<img class="icon" src="./images/css-logo.svg" alt="CSS Icon">
-								<img class="icon" src="./images/js-logo.svg" alt="JavaScript Icon">
+						<div class="mb-4 techIcons">
+							<img class="icon" src="./images/html-logo.svg" alt="HTML Icon">
+							<img class="icon" src="./images/css-logo.svg" alt="CSS Icon">
+							<img class="icon" src="./images/js-logo.svg" alt="JavaScript Icon">
+						</div>
+						<p class="mb-4">
+							A weather app that uses the OpenWeatherMap API to fetch the current weather for any location. 
+							Users can easily switch between Fahrenheit and Celsius. 
+							A dynamic background changes based on the time of day.
+						</p>
+						<div class="mb-4 projectLinks">
+							<div>
+								<a class="btn btn-danger" href="https://nrod42.github.io/weatherApp/dist/" role="button" target="_blank">
+									<img src="./images/link.webp" alt="Link Icon">
+									Live Site
+								</a>
 							</div>
-							<p>A weather app that uses the OpenWeatherMap API to fetch the current weather for any location. 
-								Users can easily switch between Fahrenheit and Celsius. 
-								A dynamic background changes based on the time of day.</p>
-							<div class="projectLinks">
-								<div>
-									<a class="btn btn-danger" href="https://nrod42.github.io/weatherApp/dist/" role="button" target="_blank">
-										<img src="./images/link.webp" alt="Link Icon">
-										Live Site
-									</a>
-								</div>
-								<div>
-									<a class="btn btn-danger" href="https://github.com/nrod42/weatherApp" role="button" target="_blank">
-										<img src="./images/github-logo.webp" alt="GitHub Icon">
-										Source Code
-									</a>
-								</div>
+							<div>
+								<a class="btn btn-danger" href="https://github.com/nrod42/weatherApp" role="button" target="_blank">
+									<img src="./images/github-logo.webp" alt="GitHub Icon">
+									Source Code
+								</a>
 							</div>
 						</div>
 					</div>
-					<div class="project">
-						<div class="projectImgWrapper">
+				</div>
+				<div>
+					<div class="col-lg-6 col-sm-12">
+						<h4 class="mb-4">To-Do List</h4>
+						<div class="mb-4">
 							<img src="./images/todo-app-homepage.png" class="projectImg" alt="todo app">
 						</div>
-						<div class="projectInfo">
-							<h4>To-Do List</h4>
-							<div class="techIcons">
-								<img class="icon" src="./images/html-logo.svg" alt="HTML Icon">
-								<img class="icon" src="./images/css-logo.svg" alt="CSS Icon">
-								<img class="icon" src="./images/js-logo.svg" alt="JavaScript Icon">
+						<div class="mb-4 techIcons">
+							<img class="icon" src="./images/html-logo.svg" alt="HTML Icon">
+							<img class="icon" src="./images/css-logo.svg" alt="CSS Icon">
+							<img class="icon" src="./images/js-logo.svg" alt="JavaScript Icon">
+						</div>
+						<p class="mb-4">
+							A to-do list that allows users to create and keep track of tasks.
+							Tasks can be grouped together into user created projects for better organization.
+							Users can also filter tasks by due date or completion status.
+						</p>
+						<div class="mb-4 projectLinks">
+							<div>
+								<a class="btn btn-danger" href="https://nrod42.github.io/todo-list/dist/" role="button" target="_blank">
+									<img src="./images/link.webp" alt="Link Icon">
+									Live Site
+								</a>
 							</div>
-							<p> A to-do list that allows users to create and keep track of tasks. 
-								Tasks can be grouped together into user created projects for better organization. 
-								Users can also filter tasks by due date or completion status.</p>
-							<div class="projectLinks">
-								<div>
-									<a class="btn btn-danger" href="https://nrod42.github.io/todo-list/dist/" role="button" target="_blank">
-										<img src="./images/link.webp" alt="Link Icon">
-										Live Site
-									</a>
-								</div>
-								<div>
-									<a class="btn btn-danger" href="https://github.com/nrod42/todo-list" role="button" target="_blank">
-										<img src="./images/github-logo.webp" alt="GitHub Icon">
-										Source Code
-									</a>
-								</div>
+							<div>
+								<a class="btn btn-danger" href="https://github.com/nrod42/todo-list" role="button" target="_blank">
+									<img src="./images/github-logo.webp" alt="GitHub Icon">
+									Source Code
+								</a>
 							</div>
 						</div>
 					</div>
@@ -285,17 +284,16 @@
 			<!-- end projects -->
 
 			<!-- start about -->
-			<div id="about" class="section">
-				<div class="container">
-					<div class="row">
-						<div class="col-md-12 col-xs-11">
-							<h2>ABOUT ME</h2>
-							<h4>Mechanical Engineer Turned Web Developer.</h4>
-							<p>After working in the mechanical engineering field for the past few years, I've recently decided to switch gears and pursue a career in something that I'm much more passionate about.
-								Once I started learning web development and actually managed to deploy some sites, I soon realized that this was something I was eager to pursue professionally. 
-								As someone who is self-motivated and loves learning new things, a constantly evolving field such as web development is sure to present countless opportunities to expand my knowledge and become a better developer.
-							</p>
-						</div>
+			<div id="about" class="container mt-5 mb-5">
+				<div class="row">
+					<div class="col-md-12 col-xs-11">
+						<h2>ABOUT ME</h2>
+						<h4>Mechanical Engineer Turned Web Developer.</h4>
+						<p>
+							After working in the mechanical engineering field for the past few years, I've recently decided to switch gears and pursue a career in something that I'm much more passionate about.
+							Once I started learning web development and actually managed to deploy some sites, I soon realized that this was something I was eager to pursue professionally. 
+							As someone who is self-motivated and loves learning new things, a constantly evolving field such as web development is sure to present countless opportunities to expand my knowledge and become a better developer.
+						</p>
 					</div>
 				</div>
 			</div>
@@ -304,11 +302,6 @@
 			<!-- start footer -->
 			<footer>
 				<div class="contactLinks">
-					<div>
-						<a href="mailto:rodrigun@bu.edu" target="_blank">
-							<img src="./images/email.png" alt="E-mail Icon">
-						</a>
-					</div>
 					<div>
 						<a href="https://github.com/nrod42" target="_blank">
 							<img src="./images/github-logo.webp" alt="GitHub Icon">
@@ -319,8 +312,13 @@
 							<img src="./images/linkedin_logo.png" alt="LinkedIn Icon">
 						</a>
 					</div>
+					<div>
+						<a href="mailto:rodrigun@bu.edu" target="_blank">
+							<img src="./images/email.png" alt="E-mail Icon">
+						</a>
+					</div>
 				</div>
-				<p>© 2022 - Nigel Rodriguez</p>
+				<p>© 2023 - Nigel Rodriguez</p>
 			</footer>
 			<!-- end footer -->
 		</div>
