@@ -58,7 +58,8 @@ h2::after {
 /* end all section */
 /* start home */
 #home {
-  background-color: #1a1a1a;
+  background-image: url("/images/night-sky-background.jpg");
+  background-size: contain;
   padding-top: 140px;
   padding-bottom: 160px;
   text-align: center;
@@ -192,6 +193,15 @@ h2::after {
   text-align: center;
   color: white;
 }
+#projects .project {
+  background-color: #3f4750;
+  padding: 20px;
+  border-radius: 10px;
+}
+#projects .project h4 {
+  padding-bottom: 10px;
+  border-bottom: 3px solid #d43f52;
+}
 #projects .projectsGrid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -247,12 +257,14 @@ h2::after {
   gap: 20px;
   align-items: center;
   justify-content: center;
+  margin-top: auto;
 }
 
 /* end projects */
 /* start footer */
 footer {
-  background-color: #1a1a1a;
+  background-image: url("/images/night-sky-background.jpg");
+  background-size: contain;
   padding-top: 40px;
   padding-bottom: 20px;
   display: flex;
