@@ -58,7 +58,7 @@ h2::after {
 /* end all section */
 /* start home */
 #home {
-  background-image: url("/images/night-sky-background.jpg");
+  background-image: url("../images/night-sky-background.jpg");
   background-size: contain;
   padding-top: 140px;
   padding-bottom: 160px;
@@ -244,7 +244,7 @@ h2::after {
 /* end projects */
 /* start footer */
 footer {
-  background-image: url("/images/night-sky-background.jpg");
+  background-image: url("../images/night-sky-background.jpg");
   background-size: contain;
   padding-top: 40px;
   padding-bottom: 20px;
