@@ -19,7 +19,7 @@
 
 	<body>
 		<div id="fullpage">
-			<!-- Start navbar -->
+			<!-- Navbar -->
 			<nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #292F36;">
 				<a class="navbar-brand" href="#">Nigel Rodriguez</a>
 				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="true" aria-label="Toggle navigation">
@@ -46,8 +46,8 @@
 			</nav>
 			<!-- End navbar-->
 
-			<!-- start home -->
-			<div id="home" class="section">
+			<!-- Home Section -->
+			<section id="home" class="section">
 				<div class="container">
 					<div class="homeWrapper">
 						<h1>Hi, I'm Nigel</h1>
@@ -75,11 +75,11 @@
 						</div>
 					</div>
 				</div>
-			</div>
+			</section>
 			<!-- end home -->
 
-			<!-- start skills -->
-			<div id="skills" class="container mt-5 mb-5">
+			<!-- Skills Section -->
+			<section id="skills" class="container mt-5 mb-5">
 				<h2 class="mb-5">SKILLS</h2>
 				<div class="skillItems">	
 					<div class="skill">
@@ -117,76 +117,25 @@
 					<div class="skill">
 						<img src="./images/sass-logo.svg" alt="SCSS Icon">
 						<span>SCSS</span>
-					</div>																	
+					</div>	
+					<div></div>																
 					<div class="skill">
 						<img src="./images/git-logo.svg" alt="Git Icon">
 						<span>Git</span>
 					</div>
 				</div>
-			</div>
+			</section>
 			<!-- end skills -->
 
-			<div id="projects" class="container mt-5 mb-5">
+			<!-- Projects Section -->
+			<section id="projects" class="container mt-5 mb-5">
 				<h2 class="mb-5">PROJECTS</h2>
-				<!-- Blog Site -->
-				<div class="row mb-4 justify-content-center align-items-center">
-					<div class="project d-flex flex-column">
-						<h4 class="mb-4">Blog Site</h4>
-						<div class="row">
-							<div class=" col-lg-4 mb-4">
-								<a href="https://mernblog-2g36.onrender.com/" target="_blank"><img src="./images/mern-blog-homepage.png" class="projectImg" alt="project img"></a>
-							</div>
-							<div class="col-lg-8">
-								<div class=" mb-4 techIcons">
-									<img class="icon" src="./images/react-logo.svg" alt="React Icon">
-									<img class="icon" src="./images/js-logo.svg" alt="Javascript Icon">
-									<img class="icon" src="./images/nodejs-logo.svg" alt="Node.js" style="background-color: white; padding: 5px;">
-									<img class="icon" src="./images/express-logo.png" alt="Express Icon" style="background-color: white; padding: 5px;">
-									<img class="icon" src="./images/mongodb-logo.svg" alt="MongoDB Icon">
-									<img class="icon" src="./images/bootstrap-logo.svg" alt="Bootstrap Icon">
-									<img class="icon" src="./images/html-logo.svg" alt="HTML Icon">
-									<img class="icon" src="./images/css-logo.svg" alt="CSS Icon">
-								</div>
-								<p class="mb-4">
-									MERN Blog is a dynamic and interactive full-stack blogging platform developed using the MERN stack (MongoDB, Express, React, and Node.js).
-									It empowers users with the ability to effortlessly create, read, update, and delete blog posts, offering seamless content management and engagement.
-									Key features include secure user registration and authentication, intuitive blog creation with rich text editing and image uploading, robust search functionality powered by MongoDB's text indexing, and a responsive design approach for optimal usability on various devices.
-									Additionally, users can personalize their experience with personalized profiles, allowing them to conveniently manage their information and access their posts.
-								</p>
-							</div>
-						</div>
-
-						<div class="row mb-4 projectLinks">
-							<a class="btn btn-danger" href="https://mernblog-2g36.onrender.com/" role="button" target="_blank">
-								<img src="./images/link.webp" alt="Link Icon">
-								Live Site
-							</a>
-							<a class="btn btn-danger" href="https://github.com/nrod42/mern-blog" role="button" target="_blank">
-								<img src="./images/github-logo.webp" alt="GitHub Icon">
-								Source Code
-							</a>
-						</div>
-					</div>
-				</div>
 				<!-- TV/Movie Tracker -->
 				<div class="row mb-4 justify-content-center align-items-center">
-					<!-- <div class="col-lg-12 mb-4 d-flex"> -->
+					<div class="col-lg-12 mb-4 d-flex">
 						<div class="project d-flex flex-column">
 							<h4 class="mb-4">TV/Movie Tracker</h4>
-							<div class="row">
-								<div class="col-lg-4 mb-4">
-									<a href="https://nrod42.github.io/tv-show-tracker/" target="_blank"><img src="./images/track-homepage.png" class="projectImg" alt="project img"></a>
-								</div>
-								<div class="col-lg-8">
-									<p class="mb-4">
-										The TV Show/Movie Tracker is a React-based web application developed using React/JS, Bootstrap/CSS, and HTML.
-										It leverages the TMDB API to fetch and display TV shows and movies, providing users with an immersive browsing experience.
-										The project showcases strong technical skills in front-end development, including interactive media cards, personalized watch lists, and real-time search functionality.
-										With a focus on user engagement and data integration, the TV Show/Movie Tracker demonstrates proficiency in React and API integration, delivering a dynamic and engaging platform for exploring and tracking favorite TV shows and movies.
-									</p>
-								</div>
-							</div>
-							<div class="row d-flex align-items-center justify-content-center">
+							<!-- <div class="row text-center"> -->
 								<div class="mb-4 techIcons">
 									<img class="icon" src="./images/react-logo.svg" alt="React Icon">
 									<img class="icon" src="./images/js-logo.svg" alt="Javascript Icon">
@@ -197,22 +146,87 @@
 									<img class="icon" src="./images/html-logo.svg" alt="HTML Icon">
 									<img class="icon" src="./images/css-logo.svg" alt="CSS Icon">
 								</div>
-							</div>
-							<div class="row d-flex align-items-center justify-content-center">
-								<div class="mb-4 projectLinks">
-									<a class="btn btn-danger" href="https://nrod42.github.io/tv-show-tracker/" role="button" target="_blank">
-										<img src="./images/link.webp" alt="Link Icon">
-										Live Site
-									</a>
-									<a class="btn btn-danger" href="https://github.com/nrod42/tv-show-tracker" role="button" target="_blank">
-										<img src="./images/github-logo.webp" alt="GitHub Icon">
-										Source Code
-									</a>
+							<!-- </div> -->
+							<div class="row">
+								<div class="col-lg-4 d-flex flex-column justify-content-center">
+									<a class="mb-4" href="https://nrod42.github.io/tv-show-tracker/" target="_blank"><img src="./images/track-homepage.png" class="projectImg" alt="project img"></a>
+									<a class="mb-4" href="https://nrod42.github.io/tv-show-tracker/" target="_blank"><img src="./images/track-homepage-2.png" class="projectImg" alt="project img"></a>
+								</div>
+								<div class="col-lg-8 mb-4">
+									<p>
+										The TV Show/Movie Tracker is a React-based web application developed using React/JS, Bootstrap/CSS, and HTML.
+										It leverages the TMDB API to fetch and display TV shows and movies, providing users with an immersive browsing experience.
+										The project showcases strong technical skills in front-end development, including interactive media cards, personalized watch lists, and real-time search functionality.
+									</p>
+									<p>
+										On the backend, the application incorporates Node.js, Express, and MongoDB. 
+										User watchlists are securely stored in MongoDB, allowing users to save and organize their favorite shows and movies. 
+										The implementation includes user registration and login functionality, utilizing bcrypt for password hashing and JSON Web Tokens for secure authentication and authorization. 
+										This ensures privacy and data protection for user accounts.
+									</p>
 								</div>
 							</div>
+							<div class="mb-4 projectLinks">
+								<a class="btn btn-danger" href="https://nrod42.github.io/tv-show-tracker/" role="button" target="_blank">
+									<img src="./images/link.webp" alt="Link Icon">
+									Live Site
+								</a>
+								<a class="btn btn-danger" href="https://github.com/nrod42/tv-show-tracker" role="button" target="_blank">
+									<img src="./images/github-logo.webp" alt="GitHub Icon">
+									Source Code
+								</a>
+							</div>
 						</div>
-					<!-- </div> -->
-				</div>				
+					</div>
+				</div>	
+				<!-- Blog Site -->
+				<div class="row mb-4 justify-content-center align-items-center">
+					<div class="col-lg-12 mb-4 d-flex">
+						<div class="project d-flex flex-column">
+							<h4 class="mb-4">Blog Site</h4>
+							<div class="mb-4 techIcons">
+								<img class="icon" src="./images/react-logo.svg" alt="React Icon">
+								<img class="icon" src="./images/js-logo.svg" alt="Javascript Icon">
+								<img class="icon" src="./images/nodejs-logo.svg" alt="Node.js" style="background-color: white; padding: 5px;">
+								<img class="icon" src="./images/express-logo.png" alt="Express Icon" style="background-color: white; padding: 5px;">
+								<img class="icon" src="./images/mongodb-logo.svg" alt="MongoDB Icon">
+								<img class="icon" src="./images/bootstrap-logo.svg" alt="Bootstrap Icon">
+								<img class="icon" src="./images/html-logo.svg" alt="HTML Icon">
+								<img class="icon" src="./images/css-logo.svg" alt="CSS Icon">
+							</div>
+							<div class="row">
+								<div class=" col-lg-4 mb-4 d-flex flex-column justify-content-center">
+									<a class="mb-4" href="https://mernblog-2g36.onrender.com/" target="_blank"><img src="./images/mern-blog-homepage.png" class="projectImg" alt="project img"></a>
+									<a class="mb-4" href="https://mernblog-2g36.onrender.com/" target="_blank"><img src="./images/mern-blog-homepage-2.png" class="projectImg" alt="project img"></a>
+								</div>
+								<div class="col-lg-8 mb-4">
+									<p>
+										The Blog Site project is a dynamic and interactive full-stack blogging platform that offers seamless content management and engagement. 
+										Built with React on the frontend, the application provides a responsive and intuitive user interface for effortless blog creation and management. 
+										Users can easily create, read, update, and delete blog posts using rich text editing capabilities and image uploading. 
+										Additionally, the site provides personalized profiles for users to conveniently manage their information and access their posts.
+									</p>
+									<p>
+										On the backend, the site leverages MongoDB for data storage and integrates Express and Node.js to handle server-side functionalities. 
+										MongoDB's robust text indexing feature is utilized to provide efficient content discovery through the platform's search functionality. 
+										User registration and authentication are implemented using bcrypt for password hashing and JSON Web Tokens for secure user authorization, ensuring privacy, data protection, and secure access to the platform.
+									</p>
+								</div>
+							</div>
+							<div class="mb-4 projectLinks">
+								<a class="btn btn-danger" href="https://mernblog-2g36.onrender.com/" role="button" target="_blank">
+									<img src="./images/link.webp" alt="Link Icon">
+									Live Site
+								</a>
+								<a class="btn btn-danger" href="https://github.com/nrod42/mern-blog" role="button" target="_blank">
+									<img src="./images/github-logo.webp" alt="GitHub Icon">
+									Source Code
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+							
 				<div class="row mb-4">	
 					<!-- Shopping Site -->
 					<div class="col-lg-4">
@@ -265,7 +279,7 @@
 								App that generates a resume based on user form inputs. Users are then able to download the generated resume as a PDF. 
 								This project features form handling as well as React Hooks, Router, and Framer Motion.
 							</p>
-							<div class="mb-4 projectLinks">
+							<div class="projectLinks">
 								<a class="btn btn-danger" href="https://nrod42.github.io/cv-project" role="button" target="_blank">
 									<img src="./images/link.webp" alt="Link Icon">
 									Live Site
@@ -294,7 +308,7 @@
 								A Simpsons themed memory game where the player must click each character only once until every character is clicked. 
 								The characters are shuffled on every click and both the current and best scores are saved using local storage.
 							</p>
-							<div class="mb-4 projectLinks">
+							<div class="projectLinks">
 								<a class="btn btn-danger" href="https://nrod42.github.io/memory_game/" target="_blank" aria-label="memory game github repo">
 									<img src="./images/link.webp" alt="Link Icon">
 									Live Site
@@ -338,14 +352,17 @@
 						</div>
 					</div>
 				</div> -->
-			</div>		  
+			</section>
+			<!-- end projects -->  
 
-			<!-- start about -->
-			<div id="about" class="container mt-5 mb-5">
+			<!-- About Section-->
+			<section id="about" class="container mt-5 mb-5">
 				<div class="row">
-					<div class="col-md-12 col-xs-11">
+					<div class="col-lg-12 ">
 						<h2>ABOUT ME</h2>
-						<h4>Mechanical Engineer Turned Web Developer.</h4>
+						<div class="text-center">
+							<h4>Mechanical Engineer Turned Web Developer.</h4>
+						</div>
 						<p>
 							Hi! My name is Nigel and I'm a Mechanical Engineer who has recently transitioned into the world of web development. 
 							After gaining valuable experience in the mechanical engineering field, I discovered my strong interest in coding and creating interactive web experiences. 
@@ -370,10 +387,10 @@
 						</p>
 					</div>
 				</div>
-			</div>
+			</section>
 			<!-- end about -->
 
-			<!-- start footer -->
+			<!-- Footer -->
 			<footer>
 				<div class="contactLinks">
 					<div>
