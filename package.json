@@ -1,5 +1,11 @@
 {
   "dependencies": {
     "sass": "^1.62.1"
+  },
+  "scripts": {
+    "compile-scss": "node-sass css/styles.scss css/styles.css"
+  },
+  "devDependencies": {
+    "node-sass": "^9.0.0"
   }
 }

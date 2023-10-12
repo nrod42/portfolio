@@ -1,36 +1,22 @@
 * {
-  box-sizing: border-box;
-}
+  box-sizing: border-box; }
 
 html {
-  scroll-behavior: smooth;
-}
-
-body {
-  background: hsl(160, 50%, 51%);
-  background: linear-gradient(180deg, hsl(160, 50%, 51%) 0%, hsl(247, 60%, 21%) 100%);
-  color: #999;
-  font-family: "Raleway", sans-serif;
-  font-size: 18px;
-  font-weight: 400;
-  overflow-x: hidden;
-}
+  scroll-behavior: smooth; }
 
 /* start all heading */
 h1, h2, h3, h4, h5 {
   color: #f2efea;
-  font-weight: bold;
-}
+  font-weight: bold; }
 
 h2::after {
-  content: "";
+  content: '';
   height: 120px;
   width: 7px;
   transform: skew(-18deg) translateX(-50%) translateY(-10%) rotate(90deg);
   left: 50%;
   position: absolute;
-  background: #d43f52;
-}
+  background: #d43f52; }
 
 /* end all heading */
 .navbar {
@@ -38,13 +24,20 @@ h2::after {
   position: fixed;
   width: 100%;
   z-index: 1;
-}
-.navbar * {
-  color: white;
-}
-.navbar li:hover {
-  border-bottom: 1px solid #d43f52;
-}
+  background-color: #292F36; }
+  .navbar * {
+    color: white; }
+  .navbar li:hover {
+    border-bottom: 1px solid #d43f52; }
+
+body {
+  background: #44c197;
+  background: linear-gradient(180deg, #1d1556 0%, #44c197 50%, #1d1556 100%);
+  color: #999;
+  font-family: 'Poppins', sans-serif;
+  font-size: 18px;
+  font-weight: 800;
+  overflow-x: hidden; }
 
 /* start all section */
 #about,
@@ -52,199 +45,188 @@ h2::after {
 #projects,
 #contact {
   padding-top: 85px;
-  padding-bottom: 50px;
-}
+  padding-bottom: 50px; }
 
 /* end all section */
 /* start home */
 #home {
-  background-image: url("../images/night-sky-background.jpg");
-  background-size: contain;
+  background-color: #1a1a1a;
   padding-top: 140px;
   padding-bottom: 160px;
   text-align: center;
-}
-#home .homeWrapper {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-#home .homeWrapper h1 {
-  border: 2px solid #d43f52;
-  border-radius: 10px;
-  color: #d43f52;
-  display: inline-block;
-  letter-spacing: 6px;
-  padding: 25px 35px;
-  margin: 30px 0;
-  transition: all 0.5s ease;
-}
-#home .homeWrapper h1:hover {
-  background-color: #d43f52;
-  color: #ffffff;
-}
-#home .homeWrapper h2 {
-  padding-bottom: 10px;
-}
-#home .homeWrapper .mainBtnsWrapper {
-  display: flex;
-  gap: 20px;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-}
-#home .homeWrapper .mainBtnsWrapper .btn {
-  background: transparent;
-  border: 2px solid #ffffff;
-  color: #ffffff;
-  font-size: 16px;
-  font-weight: bold;
-  width: 180px;
-  height: 60px;
-  margin-top: 40px;
-  padding-top: 18px;
-  transition: all 0.4s ease-in-out;
-}
-#home .homeWrapper .mainBtnsWrapper .btn:hover {
-  background: #d43f52;
-  border-color: transparent;
-}
-#home .homeWrapper .contactLinks {
-  margin-top: 50px;
-  display: flex;
-  gap: 20px;
-}
-#home .homeWrapper .contactLinks div {
-  height: 40px;
-  background-color: white;
-  border-radius: 50%;
-  border: 2px solid white;
-}
-#home .homeWrapper .contactLinks div:hover {
-  transform: scale(1.2);
-  background-color: #d43f52;
-  border: 2px solid #d43f52;
-}
-#home .homeWrapper .contactLinks div img {
-  height: 100%;
-}
+  position: relative;
+  overflow: hidden;
+  height: 100vh; }
+  #home #particles {
+    /* Your particle styles */
+    /* Ensure that this element covers the entire header */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; }
+  #home .homeWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 50%;
+    /* Position at the vertical center of the parent */
+    left: 50%;
+    /* Position at the horizontal center of the parent */
+    transform: translate(-50%, -50%);
+    /* Center the div both horizontally and vertically */
+    text-align: center;
+    /* Center the text inside the div */
+    max-width: 100%;
+    /* Ensure responsiveness */ }
+    #home .homeWrapper h1 {
+      border: 2px solid #d43f52;
+      border-radius: 10px;
+      color: #d43f52;
+      display: inline-block;
+      letter-spacing: 6px;
+      padding: 25px 35px;
+      margin: 30px 0;
+      transition: all 0.5s ease; }
+      #home .homeWrapper h1:hover {
+        background-color: #d43f52;
+        color: #ffffff; }
+    #home .homeWrapper h2 {
+      padding-bottom: 10px; }
+    #home .homeWrapper .mainBtnsWrapper {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center; }
+      #home .homeWrapper .mainBtnsWrapper .btn {
+        background: transparent;
+        border: 2px solid #ffffff;
+        color: #ffffff;
+        font-size: 16px;
+        font-weight: bold;
+        width: 180px;
+        height: 60px;
+        margin-top: 40px;
+        padding-top: 18px;
+        transition: all 0.4s ease-in-out; }
+        #home .homeWrapper .mainBtnsWrapper .btn:hover {
+          background: #d43f52;
+          border-color: transparent; }
+    #home .homeWrapper .contactLinks {
+      margin-top: 50px;
+      display: flex;
+      gap: 20px; }
+      #home .homeWrapper .contactLinks div {
+        height: 40px;
+        background-color: white;
+        border-radius: 50%;
+        border: 2px solid white; }
+        #home .homeWrapper .contactLinks div:hover {
+          transform: scale(1.2);
+          background-color: #d43f52;
+          border: 2px solid #d43f52; }
+        #home .homeWrapper .contactLinks div img {
+          height: 100%; }
 
 /* end home */
 /* start about */
 #about {
-  color: #ffffff;
-}
-#about h2 {
-  text-align: center;
-  margin-bottom: 50px;
-  color: #d43f52;
-}
-#about h3 {
-  text-align: center;
-  margin-bottom: 30px;
-  padding: 0;
-  color: white;
-}
-#about h4 {
-  padding: 0;
-  margin-bottom: 20px;
-}
-#about .resumeLinkWrapper {
-  text-align: center;
-}
+  color: #ffffff; }
+  #about h2 {
+    text-align: center;
+    margin-bottom: 50px;
+    color: #d43f52; }
+  #about h3 {
+    text-align: center;
+    margin-bottom: 30px;
+    padding: 0;
+    color: white; }
+  #about h4 {
+    padding: 0;
+    margin-bottom: 20px; }
+  #about .resumeLinkWrapper {
+    text-align: center; }
 
 /* end about */
 /* start skills */
 #skills {
-  font-weight: bold;
-}
-#skills .skillsTitle {
-  margin-bottom: 50px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-#skills .skillItems {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  place-items: center;
-}
-#skills h2 {
-  color: #d43f52;
-  text-align: center;
-  margin: 0;
-}
-#skills .skill {
-  width: 200px;
-  display: flex;
-  align-items: center;
-  padding: 15px 0;
-  gap: 10px;
-  color: white;
-}
-#skills .skill img {
-  height: 50px;
-}
+  font-weight: bold; }
+  #skills .skillsTitle {
+    margin-bottom: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+  #skills .skillItems {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    place-items: center; }
+  #skills h2 {
+    color: #d43f52;
+    text-align: center;
+    margin: 0; }
+  #skills .skill {
+    width: 200px;
+    display: flex;
+    align-items: center;
+    padding: 15px 0;
+    gap: 10px;
+    color: white; }
+    #skills .skill img {
+      height: 50px; }
 
 /* end skills */
 /* start projects */
 #projects {
   text-align: center;
-  color: white;
-}
-#projects .project {
-  background-color: rgba(63, 71, 80, 0.4);
-  backdrop-filter: blur(5px);
-  padding: 20px;
-  border-radius: 10px;
-}
-#projects .project h4 {
-  padding-bottom: 10px;
-  border-bottom: 3px solid #d43f52;
-}
-#projects h2 {
-  color: #d43f52;
-}
-#projects p {
-  text-align: left;
-}
-#projects .projectImg {
-  width: 100%;
-  height: 100%;
-}
-#projects a {
-  display: flex;
-  gap: 5px;
-  align-items: center;
-  justify-content: center;
-  font-weight: bold;
-}
-#projects a > img {
-  height: 1.2rem;
-}
-#projects .icon {
-  height: 30px;
-}
-#projects .techIcons {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  align-items: center;
-  justify-content: center;
-}
-#projects .projectLinks {
-  display: flex;
-  gap: 20px;
-  align-items: center;
-  justify-content: center;
-  margin-top: auto;
-}
+  color: white; }
+  #projects .project {
+    background-color: rgba(63, 71, 80, 0.4);
+    backdrop-filter: blur(5px);
+    padding: 20px;
+    border-radius: 10px; }
+    #projects .project:hover {
+      cursor: pointer;
+      background-color: rgba(63, 71, 80, 0.9); }
+    #projects .project h4 {
+      padding-bottom: 10px;
+      border-bottom: 3px solid #d43f52; }
+  #projects h2 {
+    color: #d43f52; }
+  #projects p {
+    text-align: left; }
+  #projects .projectImg {
+    width: 100%;
+    height: 100%; }
+  #projects a {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold; }
+    #projects a > img {
+      height: 1.2rem; }
+  #projects .icon {
+    height: 30px; }
+  #projects .techIcons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: center;
+    justify-content: center; }
+  #projects .projectLinks {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    margin-top: auto; }
 
 /* end projects */
 /* start footer */
 footer {
-  background-image: url("../images/night-sky-background.jpg");
+  background-image: url("/images/night-sky-background.jpg");
   background-size: contain;
   padding-top: 40px;
   padding-bottom: 20px;
@@ -252,27 +234,30 @@ footer {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 20px;
-}
-footer .contactLinks {
-  display: flex;
-  gap: 20px;
-}
-footer .contactLinks div {
-  height: 40px;
-  background-color: white;
-  border-radius: 50%;
-  border: 2px solid white;
-}
-footer .contactLinks div:hover {
-  transform: scale(1.2);
-  background-color: #d43f52;
-  border: 2px solid #d43f52;
-}
-footer .contactLinks div img {
-  height: 100%;
-}
+  gap: 20px; }
+  footer .contactLinks {
+    display: flex;
+    gap: 20px; }
+  footer .contactLinks div {
+    height: 40px;
+    background-color: white;
+    border-radius: 50%;
+    border: 2px solid white; }
+    footer .contactLinks div:hover {
+      transform: scale(1.2);
+      background-color: #d43f52;
+      border: 2px solid #d43f52; }
+    footer .contactLinks div img {
+      height: 100%; }
 
 /* end footer */
-
-/*# sourceMappingURL=styles.css.map */
+.modalSize {
+  max-width: 80%;
+  /* Adjust the maximum width as needed */
+  width: 100%;
+  /* Allow the modal content to expand to its parent's width */ }
+  .modalSize img {
+    width: 100%;
+    /* Ensure images resize to fit the modal content */
+    height: auto;
+    /* Maintain aspect ratio */ }
