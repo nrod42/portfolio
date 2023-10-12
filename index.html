@@ -19,7 +19,7 @@
 		
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js" defer></script>
 		<script src="./js/index.js" defer></script>
-		<script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js" defer></script>
+		<link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
 
 		<!-- Bootstrap JS -->
 		<script src="./js/bootstrap.min.js" defer></script>
@@ -27,73 +27,70 @@
 		<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous" defer></script>
 	</head>
 
-	<nav class="navbar navbar-expand-lg navbar-dark">
-		<a class="navbar-brand" href="#">Nigel Rodriguez</a>
-		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="true" aria-label="Toggle navigation">
-			<span class="navbar-toggler-icon"></span>
-		</button>
-		<div class="collapse navbar-collapse" id="navbarNav">
-			<ul class="navbar-nav">
-				<li class="nav-item">
-					<a class="nav-link" href="#">Home</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="#skills">Skills</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="#projects">Projects</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="#about">About Me</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="./Nigel Rodriguez Resume.pdf" target="_blank">Resume</a>
-				</li>
-			</ul>
-		</div>
-	</nav>
-
-	<header id="home" class="section" style="position: relative;">
-		<div id="particles"></div>
-		<div class="homeWrapper">
-			<h1>Hi, I'm Nigel</h1>
-			<h2>FULL STACK WEB DEVELOPER</h2>
-			<div class="mainBtnsWrapper">
-				<a href="#projects" class="btn btn-default smoothScroll">SEE PROJECTS</a>
-				<a href="./Nigel Rodriguez Resume.pdf" target="_blank" class="btn btn-default smoothScroll">SEE RESUME</a>
-			</div>	
-			<div class="contactLinks">
-				<div>
-					<a href="https://github.com/nrod42" target="_blank">
-						<img src="./images/github-logo.webp" alt="GitHub Icon">
-					</a>
-				</div>
-				<div>
-					<a href="https://www.linkedin.com/in/nigel-rodriguez-20922188" target="_blank">
-						<img src="./images/linkedin_logo.png" alt="LinkedIn Icon">
-					</a>
-				</div>
-				<div>
-					<a href="mailto:rodrigun@bu.edu" target="_blank">
-						<img src="./images/email.png" alt="E-mail Icon">
-					</a>
-				</div>
-			</div>
-			<div>
-				<a href="#skills">
-					<i class='bx bx-chevrons-down'></i>
-				</a>
-			</div>
-		</div>
-	</header>
+	
 
 	<body>
-		<div id="fullpage">
-			
-			<!-- Skills Section -->
+		<nav class="navbar navbar-expand-lg navbar-dark">
+			<a class="navbar-brand" href="#">Nigel Rodriguez</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="true" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarNav">
+				<ul class="navbar-nav">
+					<li class="nav-item">
+						<a class="nav-link" href="#">Home</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#skills">Skills</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#projects">Projects</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#about">About Me</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="./Nigel Rodriguez Resume.pdf" target="_blank">Resume</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+	
+		<header id="home" class="section" style="position: relative;">
+			<div id="particles"></div>
+			<div class="homeWrapper">
+				<h1>Hi, I'm Nigel</h1>
+				<h2>FULL STACK WEB DEVELOPER</h2>
+				<div class="mainBtnsWrapper">
+					<a href="#projects" class="btn btn-default smoothScroll">SEE PROJECTS</a>
+					<a href="./Nigel Rodriguez Resume.pdf" target="_blank" class="btn btn-default smoothScroll">SEE RESUME</a>
+				</div>	
+				<div class="contactLinks">
+					<div>
+						<a href="https://github.com/nrod42" target="_blank">
+							<img src="./images/github-logo.webp" alt="GitHub Icon">
+						</a>
+					</div>
+					<div>
+						<a href="https://www.linkedin.com/in/nigel-rodriguez-20922188" target="_blank">
+							<img src="./images/linkedin_logo.png" alt="LinkedIn Icon">
+						</a>
+					</div>
+					<div>
+						<a href="mailto:rodrigun@bu.edu" target="_blank">
+							<img src="./images/email.png" alt="E-mail Icon">
+						</a>
+					</div>
+				</div>
+			</div>
+			<a class="scrollArrow" href="#skills">
+				<i class='bx bx-chevrons-down'></i>
+			</a>
+		</header>
+		<main>
 			<section id="skills" class="container mt-5 mb-5">
 				<h2 class="mb-5">SKILLS</h2>
-				<div class="skillItems">	
+				<div class="skillItems">
 					<div class="skill">
 						<img src="./images/react-logo.svg" alt="React Icon">
 						<span>React</span>
@@ -109,7 +106,7 @@
 					<div class="skill">
 						<img src="./images/express-logo.png" alt="Express.js Icon" style="background-color: white; padding: 5px;">
 						<span>Express.js</span>
-					</div>	
+					</div>
 					<div class="skill">
 						<img src="./images/mongodb-logo.svg" alt="MongoDB Icon" style="background-color: white; padding: 5px; border-radius: 50%;">
 						<span>MongoDB</span>
@@ -117,7 +114,7 @@
 					<div class="skill">
 						<img src="./images/html-logo.svg" alt="HTML Icon">
 						<span>HTML</span>
-					</div>	
+					</div>
 					<div class="skill">
 						<img src="./images/css-logo.svg" alt="CSS Icon">
 						<span>CSS</span>
@@ -125,22 +122,25 @@
 					<div class="skill">
 						<img src="./images/bootstrap-logo.svg" alt="Bootstrap Icon">
 						<span>Bootstrap</span>
-					</div>		
+					</div>
 					<div class="skill">
 						<img src="./images/sass-logo.svg" alt="SCSS Icon">
 						<span>SCSS</span>
-					</div>	
-					<div></div>																
+					</div>
+					<div></div>
 					<div class="skill">
 						<img src="./images/git-logo.svg" alt="Git Icon">
 						<span>Git</span>
 					</div>
 				</div>
 			</section>
-			<!-- end skills -->
-
-  
-			<!-- Projects Section -->
+					<!-- Button to trigger the modal
+					<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#trackerModal">
+						Open Modal
+					</button>
+					<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#blogModal">
+						Open Modal
+					</button> -->
 			<section id="projects" class="container mt-5 mb-5">
 				<h2 class="mb-5">PROJECTS</h2>
 				<!-- TV/Movie Tracker -->
@@ -160,26 +160,25 @@
 							</div>
 							<div class="row">
 								<div class="col-lg-5 d-flex flex-column justify-content-center">
-									<a class="mb-4" href="https://nrod42.github.io/tv-show-tracker/" target="_blank">
+									<!-- <a class="mb-4" href="https://nrod42.github.io/tv-show-tracker/" target="_blank"> -->
 										<img src="./images/track-homepage.png" class="projectImg mb-4" alt="project img">
-									</a>
-									<a class="mb-4" href="https://nrod42.github.io/tv-show-tracker/" target="_blank">
-										<img src="./images/track-homepage-2.png" class="projectImg mb-4" alt="project img">
-									</a>
+									<!-- </a> -->
+									<!-- <a class="mb-4" href="https://nrod42.github.io/tv-show-tracker/" target="_blank"> -->
+										<!-- <img src="./images/track-homepage-2.png" class="projectImg mb-4" alt="project img"> -->
+									<!-- </a> -->
 								</div>
 								<div class="col-lg-7 mb-4">
-
 									<p>
 										The TV Show/Movie Tracker is a React-based web application developed using React/JS, Bootstrap/CSS, and HTML.
 										It leverages the TMDB API to fetch and display TV shows and movies, providing users with an immersive browsing experience.
 										The project showcases strong technical skills in front-end development, including interactive media cards, personalized watch lists, and real-time search functionality.
 									</p>
-									<p>
-										On the backend, the application incorporates Node.js, Express, and MongoDB. 
-										User watchlists are securely stored in MongoDB, allowing users to save and organize their favorite shows and movies. 
-										The implementation includes user registration and login functionality, utilizing bcrypt for password hashing and JSON Web Tokens for secure authentication and authorization. 
+									<!-- <p>
+										On the backend, the application incorporates Node.js, Express, and MongoDB.
+										User watchlists are securely stored in MongoDB, allowing users to save and organize their favorite shows and movies.
+										The implementation includes user registration and login functionality, utilizing bcrypt for password hashing and JSON Web Tokens for secure authentication and authorization.
 										This ensures privacy and data protection for user accounts.
-									</p>
+									</p> -->
 								</div>
 							</div>
 							<div class="mb-4 projectLinks">
@@ -194,7 +193,7 @@
 							</div>
 						</div>
 					</div>
-				</div>	
+				</div>
 				<!-- Blog Site -->
 				<div class="row mb-4 justify-content-center align-items-center">
 					<div class="col-lg-12 mb-4 d-flex">
@@ -210,29 +209,27 @@
 								<img class="icon" src="./images/html-logo.svg" alt="HTML Icon">
 								<img class="icon" src="./images/css-logo.svg" alt="CSS Icon">
 							</div>
-
 							<div class="row">
 								<div class=" col-lg-5 mb-4 d-flex flex-column justify-content-center">
-									<a class="mb-4" href="https://mernblog-2g36.onrender.com/" target="_blank">
+									<!-- <a class="mb-4" href="https://mernblog-2g36.onrender.com/" target="_blank"> -->
 										<img src="./images/mern-blog-homepage.png" class="projectImg mb-4" alt="project img">
-									</a>
-									<a class="mb-4" href="https://mernblog-2g36.onrender.com/" target="_blank">
-										<img src="./images/mern-blog-homepage-2.png" class="projectImg mb-4" alt="project img">
-									</a>
+									<!-- </a> -->
+									<!-- <a class="mb-4" href="https://mernblog-2g36.onrender.com/" target="_blank"> -->
+										<!-- <img src="./images/mern-blog-homepage-2.png" class="projectImg mb-4" alt="project img"> -->
+									<!-- </a> -->
 								</div>
 								<div class="col-lg-7 mb-4">
-
 									<p>
-										The Blog Site project is a dynamic and interactive full-stack blogging platform that offers seamless content management and engagement. 
-										Built with React on the frontend, the application provides a responsive and intuitive user interface for effortless blog creation and management. 
-										Users can easily create, read, update, and delete blog posts using rich text editing capabilities and image uploading. 
+										The Blog Site project is a dynamic and interactive full-stack blogging platform that offers seamless content management and engagement.
+										Built with React on the frontend, the application provides a responsive and intuitive user interface for effortless blog creation and management.
+										Users can easily create, read, update, and delete blog posts using rich text editing capabilities and image uploading.
 										Additionally, the site provides personalized profiles for users to conveniently manage their information and access their posts.
 									</p>
-									<p>
-										On the backend, the site leverages MongoDB for data storage and integrates Express and Node.js to handle server-side functionalities. 
-										MongoDB's robust text indexing feature is utilized to provide efficient content discovery through the platform's search functionality. 
+									<!-- <p>
+										On the backend, the site leverages MongoDB for data storage and integrates Express and Node.js to handle server-side functionalities.
+										MongoDB's robust text indexing feature is utilized to provide efficient content discovery through the platform's search functionality.
 										User registration and authentication are implemented using bcrypt for password hashing and JSON Web Tokens for secure user authorization, ensuring privacy, data protection, and secure access to the platform.
-									</p>
+									</p> -->
 								</div>
 							</div>
 							<div class="mb-4 projectLinks">
@@ -248,8 +245,8 @@
 						</div>
 					</div>
 				</div>
-							
-				<div class="row mb-4">	
+			
+				<div class="row mb-4">
 					<!-- Shopping Site -->
 					<div class="col-lg-6 mb-4">
 						<div class="project">
@@ -265,8 +262,8 @@
 								<img class="icon" src="./images/css-logo.svg" alt="CSS Icon">
 							</div>
 							<p>
-								The Shopping Site project is a responsive product showcase developed with React and Bootstrap. 
-								Users can browse and filter products based on categories, view detailed information on individual product pages, and add items to their cart. 
+								The Shopping Site project is a responsive product showcase developed with React and Bootstrap.
+								Users can browse and filter products based on categories, view detailed information on individual product pages, and add items to their cart.
 								The dynamic off-canvas cart provides real-time quantity updates, ensuring a seamless and convenient shopping experience.
 								Although the site does not support actual purchases, it provides a streamlined purchasing experience by allowing users to review their cart at any point.
 							</p>
@@ -281,7 +278,7 @@
 								</a>
 							</div>
 						</div>
-					</div>		
+					</div>
 					<!-- Resume Builder -->
 					<div class="col-lg-6">
 						<div class="project">
@@ -297,9 +294,9 @@
 								<img class="icon" src="./images/css-logo.svg" alt="CSS Icon">
 							</div>
 							<p class="mb-4">
-								Developed a dynamic web application using React and Bootstrap that allows users to generate personalized resumes based on their form inputs. 
-								The application features a responsive navigation system, interactive forms, and a card-based layout for an intuitive user experience. 
-								The integration of PDF download functionality enables easy generation and sharing of professional resumes. 
+								Developed a dynamic web application using React and Bootstrap that allows users to generate personalized resumes based on their form inputs.
+								The application features a responsive navigation system, interactive forms, and a card-based layout for an intuitive user experience.
+								The integration of PDF download functionality enables easy generation and sharing of professional resumes.
 								The project also demonstrates proficiency in state management techniques, leveraging React Hooks and Router for efficient data flow and a seamless user experience.
 							</p>
 							<div class="projectLinks">
@@ -314,12 +311,9 @@
 							</div>
 						</div>
 					</div>
-				</div>	
-
+				</div>
 			</section>
-			<!-- end projects -->  
-
-			<!-- About Section-->
+			
 			<section id="about" class="container mt-5 mb-5">
 				<div class="row">
 					<div class="col-lg-12 ">
@@ -328,22 +322,22 @@
 							<h4>Mechanical Engineer Turned Web Developer.</h4>
 						</div>
 						<p>
-							Hi! My name is Nigel and I'm a Mechanical Engineer who has recently transitioned into the world of web development. 
-							After gaining valuable experience in the mechanical engineering field, I discovered my strong interest in coding and creating interactive web experiences. 
-							With a solid foundation in HTML, CSS, JavaScript, and a range of popular web development technologies like React, MongoDB, Node.js, and Express.js, 
+							Hi! My name is Nigel and I'm a Mechanical Engineer who has recently transitioned into the world of web development.
+							After gaining valuable experience in the mechanical engineering field, I discovered my strong interest in coding and creating interactive web experiences.
+							With a solid foundation in HTML, CSS, JavaScript, and a range of popular web development technologies like React, MongoDB, Node.js, and Express.js,
 							I have successfully built a diverse portfolio of projects that showcase my skills and creativity.
 						</p>
 						<p>
-							Through my journey as a self-taught web developer, I have realized the immense potential and endless possibilities that web development offers. 
-							I thrive on the constant learning and growth opportunities provided by this rapidly evolving field. 
+							Through my journey as a self-taught web developer, I have realized the immense potential and endless possibilities that web development offers.
+							I thrive on the constant learning and growth opportunities provided by this rapidly evolving field.
 							Each project I undertake allows me to challenge myself, expand my knowledge, and hone my development skills.
 						</p>
 						<p>
-							My engineering background has instilled in me a strong problem-solving mindset and attention to detail, qualities that seamlessly translate into my web development work. 
+							My engineering background has instilled in me a strong problem-solving mindset and attention to detail, qualities that seamlessly translate into my web development work.
 							I am adept at analyzing complex problems and developing efficient solutions that deliver a seamless user experience.
 						</p>
 						<p>
-							As I embark on this new chapter in my career, I am excited to collaborate with like-minded professionals, contribute to innovative projects, and make a positive impact in the world of web development. 
+							As I embark on this new chapter in my career, I am excited to collaborate with like-minded professionals, contribute to innovative projects, and make a positive impact in the world of web development.
 							I am driven, self-motivated, and enthusiastic about continuously expanding my skill set and staying up-to-date with the latest industry trends.
 						</p>
 						<p>
@@ -352,36 +346,32 @@
 					</div>
 				</div>
 			</section>
-			<!-- end about -->
+		</main>
 
-			<!-- Footer -->
-			<footer>
-				<div class="contactLinks">
-					<div>
-						<a href="https://github.com/nrod42" target="_blank">
-							<img src="./images/github-logo.webp" alt="GitHub Icon">
-						</a>
-					</div>
-					<div>
-						<a href="https://www.linkedin.com/in/nigel-rodriguez-20922188" target="_blank">
-							<img src="./images/linkedin_logo.png" alt="LinkedIn Icon">
-						</a>
-					</div>
-					<div>
-						<a href="mailto:rodrigun@bu.edu" target="_blank">
-							<img src="./images/email.png" alt="E-mail Icon">
-						</a>
-					</div>
+		<footer>
+			<div class="contactLinks">
+				<div>
+					<a href="https://github.com/nrod42" target="_blank">
+						<img src="./images/github-logo.webp" alt="GitHub Icon">
+					</a>
 				</div>
-				<span>© 2023 - Nigel Rodriguez</span>
-			</footer>
-			<!-- end footer -->
-		</div>
+				<div>
+					<a href="https://www.linkedin.com/in/nigel-rodriguez-20922188" target="_blank">
+						<img src="./images/linkedin_logo.png" alt="LinkedIn Icon">
+					</a>
+				</div>
+				<div>
+					<a href="mailto:rodrigun@bu.edu" target="_blank">
+						<img src="./images/email.png" alt="E-mail Icon">
+					</a>
+				</div>
+			</div>
+			<span>© 2023 - Nigel Rodriguez</span>
+		</footer>
 	</body>
+
+
 </html>
-
-
-
 
 
 

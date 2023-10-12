@@ -1,10 +1,13 @@
 * {
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  color: #999;
+  font-family: 'Poppins', sans-serif; }
 
 html {
   scroll-behavior: smooth; }
 
-/* start all heading */
 h1, h2, h3, h4, h5 {
   color: #f2efea;
   font-weight: bold; }
@@ -18,239 +21,246 @@ h2::after {
   position: absolute;
   background: #d43f52; }
 
-/* end all heading */
-.navbar {
-  opacity: 0.98;
-  position: fixed;
-  width: 100%;
-  z-index: 1;
-  background-color: #292F36; }
-  .navbar * {
-    color: white; }
-  .navbar li:hover {
-    border-bottom: 1px solid #d43f52; }
-
 body {
-  background: #44c197;
-  background: linear-gradient(180deg, #1d1556 0%, #44c197 50%, #1d1556 100%);
-  color: #999;
-  font-family: 'Poppins', sans-serif;
   font-size: 18px;
   font-weight: 800;
-  overflow-x: hidden; }
-
-/* start all section */
-#about,
-#skills,
-#projects,
-#contact {
-  padding-top: 85px;
-  padding-bottom: 50px; }
-
-/* end all section */
-/* start home */
-#home {
-  background-color: #1a1a1a;
-  padding-top: 140px;
-  padding-bottom: 160px;
-  text-align: center;
+  overflow-x: hidden;
   position: relative;
-  overflow: hidden;
-  height: 100vh; }
-  #home #particles {
-    /* Your particle styles */
-    /* Ensure that this element covers the entire header */
-    position: absolute;
-    top: 0;
-    left: 0;
+  background: linear-gradient(180deg, black 10%, #002333 30%, #002333 95%, black 100%); }
+  body main {
+    position: relative; }
+  body .navbar {
+    opacity: 0.98;
+    position: fixed;
     width: 100%;
-    height: 100%; }
-  #home .homeWrapper {
+    z-index: 1;
+    background-color: #292F36; }
+    body .navbar * {
+      color: white; }
+    body .navbar li:hover {
+      border-bottom: 1px solid #d43f52; }
+  body #about,
+  body #skills,
+  body #projects,
+  body #contact {
+    padding-top: 85px;
+    padding-bottom: 50px; }
+  body #home {
+    background-color: #1a1a1a;
+    padding-top: 140px;
+    padding-bottom: 160px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 100vh; }
+    body #home #particles {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%; }
+    body #home .bx.bx-chevrons-down {
+      color: #d43f52;
+      font-size: 2rem;
+      transform: translate(-50%, -50%); }
+    body #home .scrollArrow {
+      position: absolute;
+      bottom: 10%;
+      left: 50%;
+      color: #d43f52;
+      transform: translate(0, -50%);
+      transition: all 0.5s; }
+    body #home .scrollArrow:hover {
+      opacity: 0.7; }
+    body #home .scrollArrow::before {
+      position: absolute;
+      top: -22px;
+      left: -22px;
+      z-index: -1;
+      content: '';
+      width: 44px;
+      height: 44px;
+      box-shadow: 0 0 0 0 rgba(212, 63, 82, 0.4);
+      border-radius: 100%;
+      animation: pulse 3s infinite; }
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 0; }
+  15%, 45% {
+    opacity: 1; }
+  60% {
+    box-shadow: 0 0 0 30px rgba(212, 63, 82, 0.4);
+    opacity: 0; } }
+    body #home .homeWrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      max-width: 100%; }
+      body #home .homeWrapper h1 {
+        border: 2px solid #d43f52;
+        border-radius: 10px;
+        color: #d43f52;
+        display: inline-block;
+        letter-spacing: 6px;
+        padding: 25px 35px;
+        margin: 30px 0;
+        transition: all 0.5s ease; }
+        body #home .homeWrapper h1:hover {
+          background-color: #d43f52;
+          color: #ffffff; }
+      body #home .homeWrapper h2 {
+        padding-bottom: 10px; }
+      body #home .homeWrapper .mainBtnsWrapper {
+        display: flex;
+        gap: 20px;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center; }
+        body #home .homeWrapper .mainBtnsWrapper .btn {
+          background: transparent;
+          border: 2px solid #ffffff;
+          color: #ffffff;
+          font-size: 16px;
+          font-weight: bold;
+          width: 180px;
+          height: 60px;
+          margin-top: 40px;
+          padding-top: 18px;
+          transition: all 0.4s ease-in-out; }
+          body #home .homeWrapper .mainBtnsWrapper .btn:hover {
+            background: #d43f52;
+            border-color: transparent; }
+      body #home .homeWrapper .contactLinks {
+        margin-top: 50px;
+        display: flex;
+        gap: 20px; }
+        body #home .homeWrapper .contactLinks div {
+          height: 40px;
+          background-color: white;
+          border-radius: 50%;
+          border: 2px solid white; }
+          body #home .homeWrapper .contactLinks div:hover {
+            transform: scale(1.2);
+            background-color: #d43f52;
+            border: 2px solid #d43f52; }
+          body #home .homeWrapper .contactLinks div img {
+            height: 100%; }
+  body #about {
+    color: #ffffff; }
+    body #about h2 {
+      text-align: center;
+      margin-bottom: 50px;
+      color: #d43f52; }
+    body #about h3 {
+      text-align: center;
+      margin-bottom: 30px;
+      padding: 0;
+      color: white; }
+    body #about h4 {
+      padding: 0;
+      margin-bottom: 20px; }
+    body #about .resumeLinkWrapper {
+      text-align: center; }
+  body #skills {
+    font-weight: bold; }
+    body #skills .skillsTitle {
+      margin-bottom: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: center; }
+    body #skills .skillItems {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      place-items: center; }
+    body #skills h2 {
+      color: #d43f52;
+      text-align: center;
+      margin: 0; }
+    body #skills .skill {
+      width: 200px;
+      display: flex;
+      align-items: center;
+      padding: 15px 0;
+      gap: 10px;
+      color: white; }
+      body #skills .skill img {
+        height: 50px; }
+  body #projects {
+    text-align: center;
+    color: white; }
+    body #projects .project {
+      background-color: rgba(63, 71, 80, 0.4);
+      backdrop-filter: blur(5px);
+      padding: 1.5rem;
+      border-radius: 10px; }
+      body #projects .project:hover {
+        cursor: pointer;
+        background-color: rgba(63, 71, 80, 0.9); }
+      body #projects .project h4 {
+        padding-bottom: 10px;
+        border-bottom: 3px solid #d43f52; }
+    body #projects h2 {
+      color: #d43f52; }
+    body #projects p {
+      text-align: left; }
+    body #projects .projectImg {
+      width: 100%;
+      height: 100%; }
+    body #projects a {
+      display: flex;
+      gap: 5px;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold; }
+      body #projects a > img {
+        height: 1.2rem; }
+    body #projects .icon {
+      height: 30px; }
+    body #projects .techIcons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      align-items: center;
+      justify-content: center; }
+    body #projects .projectLinks {
+      display: flex;
+      gap: 20px;
+      align-items: center;
+      justify-content: center;
+      margin-top: auto; }
+  body footer {
+    background-color: #000;
+    background-size: contain;
+    padding-top: 40px;
+    padding-bottom: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    position: absolute;
-    top: 50%;
-    /* Position at the vertical center of the parent */
-    left: 50%;
-    /* Position at the horizontal center of the parent */
-    transform: translate(-50%, -50%);
-    /* Center the div both horizontally and vertically */
-    text-align: center;
-    /* Center the text inside the div */
-    max-width: 100%;
-    /* Ensure responsiveness */ }
-    #home .homeWrapper h1 {
-      border: 2px solid #d43f52;
-      border-radius: 10px;
-      color: #d43f52;
-      display: inline-block;
-      letter-spacing: 6px;
-      padding: 25px 35px;
-      margin: 30px 0;
-      transition: all 0.5s ease; }
-      #home .homeWrapper h1:hover {
-        background-color: #d43f52;
-        color: #ffffff; }
-    #home .homeWrapper h2 {
-      padding-bottom: 10px; }
-    #home .homeWrapper .mainBtnsWrapper {
-      display: flex;
-      gap: 20px;
-      flex-wrap: wrap;
-      align-items: center;
-      justify-content: center; }
-      #home .homeWrapper .mainBtnsWrapper .btn {
-        background: transparent;
-        border: 2px solid #ffffff;
-        color: #ffffff;
-        font-size: 16px;
-        font-weight: bold;
-        width: 180px;
-        height: 60px;
-        margin-top: 40px;
-        padding-top: 18px;
-        transition: all 0.4s ease-in-out; }
-        #home .homeWrapper .mainBtnsWrapper .btn:hover {
-          background: #d43f52;
-          border-color: transparent; }
-    #home .homeWrapper .contactLinks {
-      margin-top: 50px;
+    gap: 20px; }
+    body footer .contactLinks {
       display: flex;
       gap: 20px; }
-      #home .homeWrapper .contactLinks div {
-        height: 40px;
-        background-color: white;
-        border-radius: 50%;
-        border: 2px solid white; }
-        #home .homeWrapper .contactLinks div:hover {
-          transform: scale(1.2);
-          background-color: #d43f52;
-          border: 2px solid #d43f52; }
-        #home .homeWrapper .contactLinks div img {
-          height: 100%; }
+    body footer .contactLinks div {
+      height: 40px;
+      background-color: white;
+      border-radius: 50%;
+      border: 2px solid white; }
+      body footer .contactLinks div:hover {
+        transform: scale(1.2);
+        background-color: #d43f52;
+        border: 2px solid #d43f52; }
+      body footer .contactLinks div img {
+        height: 100%; }
 
-/* end home */
-/* start about */
-#about {
-  color: #ffffff; }
-  #about h2 {
-    text-align: center;
-    margin-bottom: 50px;
-    color: #d43f52; }
-  #about h3 {
-    text-align: center;
-    margin-bottom: 30px;
-    padding: 0;
-    color: white; }
-  #about h4 {
-    padding: 0;
-    margin-bottom: 20px; }
-  #about .resumeLinkWrapper {
-    text-align: center; }
-
-/* end about */
-/* start skills */
-#skills {
-  font-weight: bold; }
-  #skills .skillsTitle {
-    margin-bottom: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: center; }
-  #skills .skillItems {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    place-items: center; }
-  #skills h2 {
-    color: #d43f52;
-    text-align: center;
-    margin: 0; }
-  #skills .skill {
-    width: 200px;
-    display: flex;
-    align-items: center;
-    padding: 15px 0;
-    gap: 10px;
-    color: white; }
-    #skills .skill img {
-      height: 50px; }
-
-/* end skills */
-/* start projects */
-#projects {
-  text-align: center;
-  color: white; }
-  #projects .project {
-    background-color: rgba(63, 71, 80, 0.4);
-    backdrop-filter: blur(5px);
-    padding: 20px;
-    border-radius: 10px; }
-    #projects .project:hover {
-      cursor: pointer;
-      background-color: rgba(63, 71, 80, 0.9); }
-    #projects .project h4 {
-      padding-bottom: 10px;
-      border-bottom: 3px solid #d43f52; }
-  #projects h2 {
-    color: #d43f52; }
-  #projects p {
-    text-align: left; }
-  #projects .projectImg {
-    width: 100%;
-    height: 100%; }
-  #projects a {
-    display: flex;
-    gap: 5px;
-    align-items: center;
-    justify-content: center;
-    font-weight: bold; }
-    #projects a > img {
-      height: 1.2rem; }
-  #projects .icon {
-    height: 30px; }
-  #projects .techIcons {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    align-items: center;
-    justify-content: center; }
-  #projects .projectLinks {
-    display: flex;
-    gap: 20px;
-    align-items: center;
-    justify-content: center;
-    margin-top: auto; }
-
-/* end projects */
-/* start footer */
-footer {
-  background-image: url("/images/night-sky-background.jpg");
-  background-size: contain;
-  padding-top: 40px;
-  padding-bottom: 20px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 20px; }
-  footer .contactLinks {
-    display: flex;
-    gap: 20px; }
-  footer .contactLinks div {
-    height: 40px;
-    background-color: white;
-    border-radius: 50%;
-    border: 2px solid white; }
-    footer .contactLinks div:hover {
-      transform: scale(1.2);
-      background-color: #d43f52;
-      border: 2px solid #d43f52; }
-    footer .contactLinks div img {
-      height: 100%; }
-
-/* end footer */
 .modalSize {
   max-width: 80%;
   /* Adjust the maximum width as needed */
