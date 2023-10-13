@@ -33,7 +33,7 @@ body {
     opacity: 0.98;
     position: fixed;
     width: 100%;
-    z-index: 1;
+    z-index: 2;
     background-color: #292F36; }
     body .navbar * {
       color: white; }
@@ -47,63 +47,54 @@ body {
     padding-bottom: 50px; }
   body #home {
     background-color: #1a1a1a;
-    padding-top: 140px;
-    padding-bottom: 160px;
     text-align: center;
     position: relative;
     overflow: hidden;
     width: 100%;
-    height: 100vh; }
+    height: 100vh;
+    padding-top: 3rem; }
     body #home #particles {
       position: absolute;
       top: 0;
       left: 0;
       width: 100%;
       height: 100%; }
-    body #home .bx.bx-chevrons-down {
-      color: #d43f52;
-      font-size: 2rem;
-      transform: translate(-50%, -50%); }
-    body #home .scrollArrow {
-      position: absolute;
-      bottom: 10%;
-      left: 50%;
-      color: #d43f52;
-      transform: translate(0, -50%);
-      transition: all 0.5s; }
-    body #home .scrollArrow:hover {
-      opacity: 0.7; }
-    body #home .scrollArrow::before {
-      position: absolute;
-      top: -22px;
-      left: -22px;
-      z-index: -1;
-      content: '';
-      width: 44px;
-      height: 44px;
-      box-shadow: 0 0 0 0 rgba(212, 63, 82, 0.4);
-      border-radius: 100%;
-      animation: pulse 3s infinite; }
-
-@keyframes pulse {
-  0%, 100% {
-    opacity: 0; }
-  15%, 45% {
-    opacity: 1; }
-  60% {
-    box-shadow: 0 0 0 30px rgba(212, 63, 82, 0.4);
-    opacity: 0; } }
     body #home .homeWrapper {
+      text-align: center;
+      max-width: 100%;
+      margin: 0 2rem;
+      height: 100%;
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      text-align: center;
-      max-width: 100%; }
+      gap: 3rem; }
+      body #home .homeWrapper * {
+        z-index: 1; }
+      body #home .homeWrapper .bx.bx-chevrons-down {
+        color: #d43f52;
+        font-size: 2rem; }
+      body #home .homeWrapper .scrollArrow {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #d43f52;
+        transition: all 0.5s;
+        border: 1px solid #d43f52;
+        border-radius: 100%;
+        padding: 1.5rem;
+        animation: pulse 3s infinite;
+        text-decoration: none; }
+      body #home .homeWrapper .scrollArrow:hover {
+        opacity: 0.7; }
+
+@keyframes pulse {
+  0%, 100% {
+    border: none; }
+  50% {
+    box-shadow: 0 0 0 30px rgba(212, 63, 82, 0.4);
+    border-radius: 1px solid #d43f52; } }
       body #home .homeWrapper h1 {
         border: 2px solid #d43f52;
         border-radius: 10px;
@@ -111,7 +102,6 @@ body {
         display: inline-block;
         letter-spacing: 6px;
         padding: 25px 35px;
-        margin: 30px 0;
         transition: all 0.5s ease; }
         body #home .homeWrapper h1:hover {
           background-color: #d43f52;
@@ -126,20 +116,18 @@ body {
         justify-content: center; }
         body #home .homeWrapper .mainBtnsWrapper .btn {
           background: transparent;
-          border: 2px solid #ffffff;
+          border: 2px solid #d43f52;
           color: #ffffff;
-          font-size: 16px;
+          font-size: 1rem;
           font-weight: bold;
           width: 180px;
           height: 60px;
-          margin-top: 40px;
           padding-top: 18px;
           transition: all 0.4s ease-in-out; }
           body #home .homeWrapper .mainBtnsWrapper .btn:hover {
             background: #d43f52;
             border-color: transparent; }
       body #home .homeWrapper .contactLinks {
-        margin-top: 50px;
         display: flex;
         gap: 20px; }
         body #home .homeWrapper .contactLinks div {
@@ -200,7 +188,8 @@ body {
       background-color: rgba(63, 71, 80, 0.4);
       backdrop-filter: blur(5px);
       padding: 1.5rem;
-      border-radius: 10px; }
+      border-radius: 10px;
+      box-shadow: 10px 10px 5px 0px #d43f52; }
       body #projects .project:hover {
         cursor: pointer;
         background-color: rgba(63, 71, 80, 0.9); }
@@ -271,3 +260,19 @@ body {
     /* Ensure images resize to fit the modal content */
     height: auto;
     /* Maintain aspect ratio */ }
+  .modalSize .modal-content {
+    background-color: #002333;
+    padding: 2rem;
+    border-radius: 8px; }
+    .modalSize .modal-content .btn > img {
+      max-height: 20px;
+      width: auto;
+      padding-right: 5px; }
+    .modalSize .modal-content .modal-header {
+      border-bottom: 1px solid #d43f52; }
+    .modalSize .modal-content .modal-footer {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      border-top: 1px solid #d43f52; }

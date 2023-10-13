@@ -1,4 +1,6 @@
-$primary-color: #d43f52;
+$primary-color: #002333;
+$accent-color: #d43f52;
+$font-size: 18px;
 
 * {
   box-sizing: border-box;
@@ -6,7 +8,6 @@ $primary-color: #d43f52;
   padding: 0;
   color: #999;
   font-family: 'Poppins', sans-serif;
-
 }
 
 html {
@@ -25,13 +26,11 @@ h2::after {
   transform: skew(-18deg) translateX(-50%) translateY(-10%) rotate(90deg);
   left: 50%;
   position: absolute;
-  background: $primary-color;
+  background: $accent-color;
 }
 
-
-
 body {
-  font-size: 18px;
+  font-size: $font-size;
   font-weight: 800;
   overflow-x: hidden;
   position: relative;
@@ -51,15 +50,16 @@ body {
     opacity: 0.98;
     position: fixed;
     width: 100%;
-    z-index: 1;
+    z-index: 2;
     background-color: #292F36;
+    // margin-bottom: 2.5rem;
 
     * {
       color: white;
     }
 
     li:hover {
-      border-bottom: 1px solid $primary-color;
+      border-bottom: 1px solid $accent-color;
     }
   }
 
@@ -73,13 +73,12 @@ body {
 
   #home {
     background-color: #1a1a1a;
-    padding-top: 140px;
-    padding-bottom: 160px;
     text-align: center;
     position: relative;
     overflow: hidden;
     width: 100%;
     height: 100vh;
+    padding-top: 3rem;
   
     #particles {
       position: absolute;
@@ -87,77 +86,93 @@ body {
       left: 0;
       width: 100%;
       height: 100%;
+      // z-index: 1;
     }
 
-    .bx.bx-chevrons-down {
-      color: $primary-color;
-      font-size: 2rem;
-      transform: translate(-50%, -50%);
-    }
-
-    .scrollArrow {
-      position: absolute;
-      bottom: 10%;
-      left: 50%;
-      color: $primary-color;
-      transform: translate(0, -50%);
-      transition: all 0.5s;
-    }
-
-    .scrollArrow:hover{
-      opacity: 0.7;
-    }
-  
-    .scrollArrow::before{
-      position: absolute;
-      top: -22px;
-      left: -22px;
-      z-index: -1;
-      content: '';
-      width: 44px;
-      height: 44px;
-      box-shadow: 0 0 0 0 rgba(212, 63, 82, 0.4);
-      border-radius: 100%;
-      animation: pulse 3s infinite;
-    }
-    
-    @keyframes pulse {
-        0%, 100%{
-            opacity: 0;
-        }
-        15%, 45%{
-            opacity: 1;
-        }
-        60%{
-            box-shadow: 0 0 0 30px rgba(212, 63, 82, 0.4);
-            opacity: 0;
-        }
-    }
-  
     .homeWrapper {
+      text-align: center;
+      max-width: 100%;
+      margin: 0 2rem;
+      height: 100%;
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      text-align: center;
-      max-width: 100%;
+      gap: 3rem;
+      // z-index: 99;
+
+      * {
+        z-index: 1;
+      }
+
+      .bx.bx-chevrons-down {
+        color: $accent-color;
+        font-size: 2rem;
+      }
+  
+      .scrollArrow {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        // bottom: 5%;
+        // left: 50%;
+        color: $accent-color;
+        // transform: translate(0, -50%);
+        transition: all 0.5s;
+        border: 1px solid $accent-color;
+        border-radius: 100%;
+        padding: 1.5rem;
+        animation: pulse 3s infinite;
+        text-decoration: none;
+      }
+      
+  
+      .scrollArrow:hover{
+        opacity: 0.7;
+        // border:8none;
+
+      }
+    
+      // .scrollArrow::before{
+      //   position: absolute;
+      //   top: 3rem;
+      //   left: 0;
+      //   z-index: -1;
+      //   content: '';
+      //   width: 44px;
+      //   height: 44px;
+      //   box-shadow: 0 0 0 0 rgba(212, 63, 82, 0.4);
+      //   border-radius: 100%;
+      //   animation: pulse 3s infinite;
+      // }
+      
+      @keyframes pulse {
+          0%, 100%{
+              border: none;
+          }
+          // 15%, 45%{
+              // opacity: 1;
+          // }
+          50%{
+              box-shadow: 0 0 0 30px rgba(212, 63, 82, 0.4);
+              // opacity: 0;
+              border-radius: 1px solid $accent-color;
+          }
+      }
   
       h1 {
-        border: 2px solid $primary-color;
+        border: 2px solid $accent-color;
         border-radius: 10px;
-        color: $primary-color;
+        color: $accent-color;
         display: inline-block;
         letter-spacing: 6px;
         padding: 25px 35px;
-        margin: 30px 0;
         transition: all 0.5s ease;
+        // z-index: 1;
   
         &:hover {
-          background-color: $primary-color;
+          background-color: $accent-color;
           color: #ffffff;
         }
       }
@@ -175,25 +190,23 @@ body {
   
         .btn {
           background: transparent;
-          border: 2px solid #ffffff;
+          border: 2px solid $accent-color;
           color: #ffffff;
-          font-size: 16px;
+          font-size: 1rem;
           font-weight: bold;
           width: 180px;
           height: 60px;
-          margin-top: 40px;
           padding-top: 18px;
           transition: all 0.4s ease-in-out;
   
           &:hover {
-            background: $primary-color;
+            background: $accent-color;
             border-color: transparent;
           }
         }
       }
   
       .contactLinks {
-        margin-top: 50px;
         display: flex;
         gap: 20px;
   
@@ -205,8 +218,8 @@ body {
   
           &:hover {
             transform: scale(1.2);
-            background-color: $primary-color;
-            border: 2px solid $primary-color;
+            background-color: $accent-color;
+            border: 2px solid $accent-color;
           }
   
           img {
@@ -222,7 +235,7 @@ body {
     h2 {
       text-align: center;
       margin-bottom: 50px;
-      color: $primary-color;
+      color: $accent-color;
     }
   
     h3 {
@@ -259,7 +272,7 @@ body {
     }
   
     h2 {
-      color: $primary-color;
+      color: $accent-color;
       text-align: center;
       margin: 0;
     }
@@ -287,6 +300,7 @@ body {
       backdrop-filter: blur(5px); 
       padding: 1.5rem; 
       border-radius: 10px;
+      box-shadow: 10px 10px 5px 0px $accent-color;
   
       &:hover  {
         cursor: pointer;
@@ -300,7 +314,7 @@ body {
     }
   
     h2 {
-      color: $primary-color;
+      color: $accent-color;
     }
   
     p {
@@ -370,8 +384,8 @@ body {
   
       &:hover {
         transform: scale(1.2);
-        background-color: $primary-color;
-        border: 2px solid $primary-color;
+        background-color: $accent-color;
+        border: 2px solid $accent-color;
       }
   
       img {
@@ -399,11 +413,40 @@ body {
   width: 100%; /* Allow the modal content to expand to its parent's width */
   // max-height: 80vh; /* Adjust the maximum height as needed */
   // overflow-y: auto; 
+ 
 
   img  {
     width: 100%; /* Ensure images resize to fit the modal content */
     height: auto; /* Maintain aspect ratio */
   }
+
+  .modal-content {
+    background-color: $primary-color;
+    padding: 2rem;
+    border-radius: 8px;
+    
+    .btn > img {
+      max-height: 20px;
+      width: auto;
+      padding-right: 5px;
+    }
+
+    .modal-header {
+      border-bottom: 1px solid #d43f52;
+    }
+
+    .modal-footer {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      border-top: 1px solid #d43f52;
+    }
+
+    
+  }
+
+
 }
 
 

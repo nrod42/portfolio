@@ -35,7 +35,7 @@
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="true" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
 			</button>
-			<div class="collapse navbar-collapse" id="navbarNav">
+			<div class="collapse navbar-collapse justify-content-end" id="navbarNav">
 				<ul class="navbar-nav">
 					<li class="nav-item">
 						<a class="nav-link" href="#">Home</a>
@@ -68,79 +68,74 @@
 				<div class="contactLinks">
 					<div>
 						<a href="https://github.com/nrod42" target="_blank">
-							<img src="./images/github-logo.webp" alt="GitHub Icon">
+							<img src="./images/github-logo.webp" alt="github">
 						</a>
 					</div>
 					<div>
 						<a href="https://www.linkedin.com/in/nigel-rodriguez-20922188" target="_blank">
-							<img src="./images/linkedin_logo.png" alt="LinkedIn Icon">
+							<img src="./images/linkedin_logo.png" alt="linked-in">
 						</a>
 					</div>
 					<div>
 						<a href="mailto:rodrigun@bu.edu" target="_blank">
-							<img src="./images/email.png" alt="E-mail Icon">
+							<img src="./images/email.png" alt="e-mail">
 						</a>
 					</div>
 				</div>
+				<a class="scrollArrow" href="#skills">
+					<i class='bx bx-chevrons-down'></i>
+				</a>
 			</div>
-			<a class="scrollArrow" href="#skills">
-				<i class='bx bx-chevrons-down'></i>
-			</a>
+			
 		</header>
 		<main>
 			<section id="skills" class="container mt-5 mb-5">
 				<h2 class="mb-5">SKILLS</h2>
 				<div class="skillItems">
 					<div class="skill">
-						<img src="./images/react-logo.svg" alt="React Icon">
+						<img src="./images/react-logo.svg" alt="react logo">
 						<span>React</span>
 					</div>
 					<div class="skill">
-						<img src="./images/js-logo.svg" alt="JavaScript Icon">
+						<img src="./images/js-logo.svg" alt="javascript logo">
 						<span>JavaScript</span>
 					</div>
 					<div class="skill">
-						<img src="./images/nodejs-logo.svg" alt="Node.js Icon" style="background-color: white; padding: 5px; ">
+						<img src="./images/nodejs-logo.svg" alt="node.js logo" style="background-color: white; padding: 5px; ">
 						<span>Node.js</span>
 					</div>
 					<div class="skill">
-						<img src="./images/express-logo.png" alt="Express.js Icon" style="background-color: white; padding: 5px;">
+						<img src="./images/express-logo.png" alt="express.js logo" style="background-color: white; padding: 5px;">
 						<span>Express.js</span>
 					</div>
 					<div class="skill">
-						<img src="./images/mongodb-logo.svg" alt="MongoDB Icon" style="background-color: white; padding: 5px; border-radius: 50%;">
+						<img src="./images/mongodb-logo.svg" alt="mongo-db logo" style="background-color: white; padding: 5px; border-radius: 50%;">
 						<span>MongoDB</span>
 					</div>
 					<div class="skill">
-						<img src="./images/html-logo.svg" alt="HTML Icon">
+						<img src="./images/html-logo.svg" alt="html logo">
 						<span>HTML</span>
 					</div>
 					<div class="skill">
-						<img src="./images/css-logo.svg" alt="CSS Icon">
+						<img src="./images/css-logo.svg" alt="css logo">
 						<span>CSS</span>
 					</div>
 					<div class="skill">
-						<img src="./images/bootstrap-logo.svg" alt="Bootstrap Icon">
+						<img src="./images/bootstrap-logo.svg" alt="bootstrap logo">
 						<span>Bootstrap</span>
 					</div>
 					<div class="skill">
-						<img src="./images/sass-logo.svg" alt="SCSS Icon">
+						<img src="./images/sass-logo.svg" alt="sass logo">
 						<span>SCSS</span>
 					</div>
 					<div></div>
 					<div class="skill">
-						<img src="./images/git-logo.svg" alt="Git Icon">
+						<img src="./images/git-logo.svg" alt="git logo">
 						<span>Git</span>
 					</div>
 				</div>
 			</section>
-					<!-- Button to trigger the modal
-					<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#trackerModal">
-						Open Modal
-					</button>
-					<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#blogModal">
-						Open Modal
-					</button> -->
+				
 			<section id="projects" class="container mt-5 mb-5">
 				<h2 class="mb-5">PROJECTS</h2>
 				<!-- TV/Movie Tracker -->
@@ -183,11 +178,11 @@
 							</div>
 							<div class="mb-4 projectLinks">
 								<a class="btn btn-danger" href="https://nrod42.github.io/tv-show-tracker/" role="button" target="_blank">
-									<img src="./images/link.webp" alt="Link Icon">
+									<img src="./images/link.webp" alt="website link icon">
 									Live Site
 								</a>
 								<a class="btn btn-danger" href="https://github.com/nrod42/tv-show-tracker" role="button" target="_blank">
-									<img src="./images/github-logo.webp" alt="GitHub Icon">
+									<img src="./images/github-logo.webp" alt="github logo">
 									Source Code
 								</a>
 							</div>
@@ -195,24 +190,24 @@
 					</div>
 				</div>
 				<!-- Blog Site -->
-				<div class="row mb-4 justify-content-center align-items-center">
+				<div class="row mb-4 justify-content-center align-items-center" data-toggle="modal" data-target="#blogModal">
 					<div class="col-lg-12 mb-4 d-flex">
 						<div class="project d-flex flex-column">
 							<h4 class="mb-4">Blog Site</h4>
 							<div class="mb-4 techIcons">
-								<img class="icon" src="./images/react-logo.svg" alt="React Icon">
-								<img class="icon" src="./images/js-logo.svg" alt="Javascript Icon">
-								<img class="icon" src="./images/nodejs-logo.svg" alt="Node.js" style="background-color: white; padding: 5px;">
-								<img class="icon" src="./images/express-logo.png" alt="Express Icon" style="background-color: white; padding: 5px;">
-								<img class="icon" src="./images/mongodb-logo.svg" alt="MongoDB Icon">
-								<img class="icon" src="./images/bootstrap-logo.svg" alt="Bootstrap Icon">
-								<img class="icon" src="./images/html-logo.svg" alt="HTML Icon">
-								<img class="icon" src="./images/css-logo.svg" alt="CSS Icon">
+								<img class="icon" src="./images/react-logo.svg" alt="react logo">
+								<img class="icon" src="./images/js-logo.svg" alt="javascript logo">
+								<img class="icon" src="./images/nodejs-logo.svg" alt="node.js logo" style="background-color: white; padding: 5px;">
+								<img class="icon" src="./images/express-logo.png" alt="express logo" style="background-color: white; padding: 5px;">
+								<img class="icon" src="./images/mongodb-logo.svg" alt="mongo-db logo">
+								<img class="icon" src="./images/bootstrap-logo.svg" alt="bootstrap logo">
+								<img class="icon" src="./images/html-logo.svg" alt="html logo">
+								<img class="icon" src="./images/css-logo.svg" alt="css logo">
 							</div>
 							<div class="row">
 								<div class=" col-lg-5 mb-4 d-flex flex-column justify-content-center">
 									<!-- <a class="mb-4" href="https://mernblog-2g36.onrender.com/" target="_blank"> -->
-										<img src="./images/mern-blog-homepage.png" class="projectImg mb-4" alt="project img">
+										<img src="./images/mern-blog-homepage.png" class="projectImg mb-4" alt="project screenshot">
 									<!-- </a> -->
 									<!-- <a class="mb-4" href="https://mernblog-2g36.onrender.com/" target="_blank"> -->
 										<!-- <img src="./images/mern-blog-homepage-2.png" class="projectImg mb-4" alt="project img"> -->
@@ -234,11 +229,11 @@
 							</div>
 							<div class="mb-4 projectLinks">
 								<a class="btn btn-danger" href="https://mernblog-2g36.onrender.com/" role="button" target="_blank">
-									<img src="./images/link.webp" alt="Link Icon">
+									<img src="./images/link.webp" alt="website link icon">
 									Live Site
 								</a>
 								<a class="btn btn-danger" href="https://github.com/nrod42/mern-blog" role="button" target="_blank">
-									<img src="./images/github-logo.webp" alt="GitHub Icon">
+									<img src="./images/github-logo.webp" alt="github logo">
 									Source Code
 								</a>
 							</div>
@@ -255,11 +250,11 @@
 								<img src="./images/shopping_cart_homepage.png" class="projectImg" alt="project img">
 							</div>
 							<div class="mb-4 techIcons">
-								<img class="icon" src="./images/react-logo.svg" alt="React Icon">
-								<img class="icon" src="./images/js-logo.svg" alt="Javascript Icon">
-								<img class="icon" src="./images/bootstrap-logo.svg" alt="Bootstrap Icon">
-								<img class="icon" src="./images/html-logo.svg" alt="HTML Icon">
-								<img class="icon" src="./images/css-logo.svg" alt="CSS Icon">
+								<img class="icon" src="./images/react-logo.svg" alt="react logo">
+								<img class="icon" src="./images/js-logo.svg" alt="javascript logo">
+								<img class="icon" src="./images/bootstrap-logo.svg" alt="bootstrap logo">
+								<img class="icon" src="./images/html-logo.svg" alt="html logo">
+								<img class="icon" src="./images/css-logo.svg" alt="css logo">
 							</div>
 							<p>
 								The Shopping Site project is a responsive product showcase developed with React and Bootstrap.
@@ -284,7 +279,7 @@
 						<div class="project">
 							<h4 class="mb-4">Resume Builder</h4>
 							<div class="mb-4">
-								<img src="./images/resume-builder-homepage.png" class="projectImg" alt="resume creator">
+								<img src="./images/resume-builder-homepage.png" class="projectImg" alt="resume creator project screenshot">
 							</div>
 							<div class="mb-4 techIcons">
 								<img class="icon" src="./images/react-logo.svg" alt="React Icon">
@@ -374,4 +369,133 @@
 </html>
 
 
+
+
+
+
+
+<!-- Modals -->
+
+	<!-- Tracker -->
+	<div class="modal fade" id="trackerModal">
+		<div class="modal-dialog modalSize">
+			<div class="modal-content">
+				<!-- Modal Header -->
+				<div class="modal-header d-flex flex-column justify-content-center align-items-center">
+					<h4 class="modal-title">TV/Movie Tracker</h4>
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+					<div class="d-flex flex-row justify-content-center align-items-center">
+						<img class="icon" src="./images/react-logo.svg" alt="React Icon" style="height: 35px;">
+						<img class="icon" src="./images/js-logo.svg" alt="Javascript Icon" style="height: 35px;">
+						<img class="icon" src="./images/nodejs-logo.svg" alt="Node.js" style="background-color: white; padding: 5px; height: 35px;">
+						<img class="icon" src="./images/express-logo.png" alt="Express Icon" style="background-color: white; padding: 5px; height: 35px;">
+						<img class="icon" src="./images/mongodb-logo.svg" alt="MongoDB Icon" style="height: 35px;">
+						<img class="icon" src="./images/bootstrap-logo.svg" alt="Bootstrap Icon" style="height: 35px;">
+						<img class="icon" src="./images/html-logo.svg" alt="HTML Icon" style="height: 35px;">
+						<img class="icon" src="./images/css-logo.svg" alt="CSS Icon" style="height: 35px;">
+					</div>
+				</div>
+				<!-- Modal body -->
+				<div class="modal-body">
+					<div class="row">
+						<div class="col-lg-4 d-flex flex-column justify-content-center">
+							<a class="mb-4" href="https://nrod42.github.io/tv-show-tracker/" target="_blank"><img src="./images/track-homepage.png" class="projectImg" alt="project img"></a>
+							<a class="mb-4" href="https://nrod42.github.io/tv-show-tracker/" target="_blank"><img src="./images/track-homepage-2.png" class="projectImg" alt="project img"></a>
+						</div>
+						<div class="col-lg-8 mb-4">
+							<p>
+								The TV Show/Movie Tracker is a React-based web application developed using React/JS, Bootstrap/CSS, and HTML.
+								It leverages the TMDB API to fetch and display TV shows and movies, providing users with an immersive browsing experience.
+								The project showcases strong technical skills in front-end development, including interactive media cards, personalized watch lists, and real-time search functionality.
+							</p>
+							<p>
+								On the backend, the application incorporates Node.js, Express, and MongoDB. 
+								User watchlists are securely stored in MongoDB, allowing users to save and organize their favorite shows and movies. 
+								The implementation includes user registration and login functionality, utilizing bcrypt for password hashing and JSON Web Tokens for secure authentication and authorization. 
+								This ensures privacy and data protection for user accounts.
+							</p>
+						</div>
+					</div>
+				</div>
+				<!-- Modal footer -->
+				<div class="modal-footer">
+					<!-- <div class="mb-4 projectLinks"> -->
+						<a class="btn btn-danger" href="https://nrod42.github.io/tv-show-tracker/" role="button" target="_blank">
+							<img src="./images/link.webp" alt="Link Icon">Live Site
+						</a>
+						<a class="btn btn-danger" href="https://github.com/nrod42/tv-show-tracker" role="button" target="_blank">
+							<img src="./images/github-logo.webp" alt="GitHub Icon">Source Code
+						</a>
+					<!-- </div> -->
+					<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+					
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+	<!-- Blog -->
+	<div class="modal fade" id="blogModal">
+		<div class="modal-dialog modalSize">
+			<div class="modal-content">
+				<!-- Modal Header -->
+				<div class="modal-header d-flex flex-column justify-content-center align-items-center">
+					<h4 class="modal-title">Blog Site</h4>
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+					<div class="d-flex flex-row justify-content-center align-items-center">
+						<img class="icon" src="./images/react-logo.svg" alt="React Icon" style="height: 35px;">
+						<img class="icon" src="./images/js-logo.svg" alt="Javascript Icon" style="height: 35px;">
+						<img class="icon" src="./images/nodejs-logo.svg" alt="Node.js" style="background-color: white; padding: 5px; height: 35px;">
+						<img class="icon" src="./images/express-logo.png" alt="Express Icon" style="background-color: white; padding: 5px; height: 35px;">
+						<img class="icon" src="./images/mongodb-logo.svg" alt="MongoDB Icon" style="height: 35px;">
+						<img class="icon" src="./images/bootstrap-logo.svg" alt="Bootstrap Icon" style="height: 35px;">
+						<img class="icon" src="./images/html-logo.svg" alt="HTML Icon" style="height: 35px;">
+						<img class="icon" src="./images/css-logo.svg" alt="CSS Icon" style="height: 35px;">
+					</div>
+				</div>
+	
+				<!-- Modal body -->
+				<div class="modal-body">
+					<div class="row">
+						<div class="col-lg-4 d-flex flex-column justify-content-center"">
+							<a class="mb-4" href="https://mernblog-2g36.onrender.com/" target="_blank">
+								<img src="./images/mern-blog-homepage.png" class="projectImg" alt="project img">'
+							</a>
+							<a class="mb-4" href="https://mernblog-2g36.onrender.com/" target="_blank">
+								<img src="./images/mern-blog-homepage-2.png" class="projectImg" alt="project img">
+							</a>
+						</div>
+						<div class="col-lg-8 mb-4">
+							<p>
+								The Blog Site project is a dynamic and interactive full-stack blogging platform that offers seamless content management and engagement.
+								Built with React on the frontend, the application provides a responsive and intuitive user interface for effortless blog creation and management.
+								Users can easily create, read, update, and delete blog posts using rich text editing capabilities and image uploading.
+								Additionally, the site provides personalized profiles for users to conveniently manage their information and access their posts.
+							</p>
+							<p>
+								On the backend, the site leverages MongoDB for data storage and integrates Express and Node.js to handle server-side functionalities.
+								MongoDB's robust text indexing feature is utilized to provide efficient content discovery through the platform's search functionality.
+								User registration and authentication are implemented using bcrypt for password hashing and JSON Web Tokens for secure user authorization, ensuring privacy, data protection, and secure access to the platform.
+							</p>
+						</div>
+					</div>
+				</div>
+	
+				<!-- Modal footer -->
+				<div class="modal-footer">
+					<a class="btn btn-danger" href="https://mernblog-2g36.onrender.com/" role="button" target="_blank">
+						<img src="./images/link.webp" alt="Link Icon">
+						Live Site
+					</a>
+					<a class="btn btn-danger" href="https://github.com/nrod42/mern-blog" role="button" target="_blank">
+						<img src="./images/github-logo.webp" alt="GitHub Icon">
+						Source Code
+					</a>
+					<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+				</div>
+			</div>
+		</div>
+	</div>
 
