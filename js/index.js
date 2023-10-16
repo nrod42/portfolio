@@ -73,3 +73,40 @@ particlesJS("particles", {
   },
   retina_detect: true,
 });
+
+// Check if the Bootstrap navigation is open or closed
+let isNavOpen = false;
+
+// Add a click event listener to the hamburger button
+document.querySelector(".navbar-toggler").addEventListener("click", function () {
+    if (isNavOpen) {
+        // If the navigation is open, close it
+        document.querySelector(".navbar-toggler").click();
+        isNavOpen = false;
+    } else {
+        // If the navigation is closed, open it
+        document.querySelector(".navbar-toggler").click();
+        isNavOpen = true;
+    }
+});
+
+// Add a click event listener to the document body to close the navigation when clicking away
+document.body.addEventListener("click", function (event) {
+    if (isNavOpen) {
+        if (!event.target.closest(".navbar")) {
+            // If the navigation is open and the click is outside the navbar, close it
+            document.querySelector(".navbar-toggler").click();
+            isNavOpen = false;
+        }
+    }
+});
+
+// Add a click event listener to close the navigation when clicking a link in it
+const navLinks = document.querySelectorAll(".nav-link");
+navLinks.forEach(link => {
+    link.addEventListener("click", function () {
+        document.querySelector(".navbar-toggler").click();
+        isNavOpen = false;
+    });
+});
+

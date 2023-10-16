@@ -30,11 +30,11 @@ body {
   body main {
     position: relative; }
   body .navbar {
-    opacity: 0.98;
+    opacity: 0.9;
     position: fixed;
     width: 100%;
     z-index: 2;
-    background-color: #292F36; }
+    background-color: black; }
     body .navbar * {
       color: white; }
     body .navbar li:hover {
@@ -58,11 +58,12 @@ body {
       top: 0;
       left: 0;
       width: 100%;
-      height: 100%; }
+      height: 100%;
+      background: #1a1a1a; }
     body #home .homeWrapper {
       text-align: center;
       max-width: 100%;
-      margin: 0 2rem;
+      padding: 3rem;
       height: 100%;
       display: flex;
       flex-direction: column;
@@ -83,7 +84,7 @@ body {
         transition: all 0.5s;
         border: 1px solid #d43f52;
         border-radius: 100%;
-        padding: 1.5rem;
+        padding: 1rem;
         animation: pulse 3s infinite;
         text-decoration: none; }
       body #home .homeWrapper .scrollArrow:hover {
@@ -102,7 +103,8 @@ body {
         display: inline-block;
         letter-spacing: 6px;
         padding: 25px 35px;
-        transition: all 0.5s ease; }
+        transition: all 0.5s ease;
+        cursor: default; }
         body #home .homeWrapper h1:hover {
           background-color: #d43f52;
           color: #ffffff; }
@@ -251,25 +253,37 @@ body {
         height: 100%; }
 
 .modalSize {
-  max-width: 80%;
-  /* Adjust the maximum width as needed */
-  width: 100%;
-  /* Allow the modal content to expand to its parent's width */ }
+  max-width: 90%;
+  width: 100%; }
   .modalSize img {
     width: 100%;
-    /* Ensure images resize to fit the modal content */
-    height: auto;
-    /* Maintain aspect ratio */ }
+    height: auto; }
   .modalSize .modal-content {
     background-color: #002333;
-    padding: 2rem;
-    border-radius: 8px; }
+    padding: 1rem;
+    border-radius: 8px;
+    position: relative; }
+    .modalSize .modal-content .close {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      color: white; }
     .modalSize .modal-content .btn > img {
       max-height: 20px;
       width: auto;
       padding-right: 5px; }
     .modalSize .modal-content .modal-header {
-      border-bottom: 1px solid #d43f52; }
+      border-bottom: 1px solid #d43f52;
+      gap: 1.5rem; }
+      .modalSize .modal-content .modal-header .techIcons {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 15px; }
+        .modalSize .modal-content .modal-header .techIcons img {
+          height: 30px;
+          width: auto; }
     .modalSize .modal-content .modal-footer {
       display: flex;
       flex-direction: row;

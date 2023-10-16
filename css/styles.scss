@@ -36,7 +36,9 @@ body {
   position: relative;
   background: linear-gradient(
     180deg,
+
     hsla(0, 0%, 0%, 1) 10%,
+
     hsla(199, 100%, 10%, 1) 30%,
     hsla(199, 100%, 10%, 1) 95%,
     hsla(0, 0%, 0%, 1) 100%
@@ -47,12 +49,11 @@ body {
   }
 
   .navbar {
-    opacity: 0.98;
+    opacity: 0.9;
     position: fixed;
     width: 100%;
     z-index: 2;
-    background-color: #292F36;
-    // margin-bottom: 2.5rem;
+    background-color: black;
 
     * {
       color: white;
@@ -79,27 +80,26 @@ body {
     width: 100%;
     height: 100vh;
     padding-top: 3rem;
-  
+
     #particles {
       position: absolute;
       top: 0;
       left: 0;
       width: 100%;
       height: 100%;
-      // z-index: 1;
+      background: #1a1a1a;
     }
 
     .homeWrapper {
       text-align: center;
       max-width: 100%;
-      margin: 0 2rem;
+      padding: 3rem;
       height: 100%;
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
       gap: 3rem;
-      // z-index: 99;
 
       * {
         z-index: 1;
@@ -109,58 +109,36 @@ body {
         color: $accent-color;
         font-size: 2rem;
       }
-  
+
       .scrollArrow {
         position: relative;
         display: flex;
         align-items: center;
         justify-content: center;
-        // bottom: 5%;
-        // left: 50%;
         color: $accent-color;
-        // transform: translate(0, -50%);
         transition: all 0.5s;
         border: 1px solid $accent-color;
         border-radius: 100%;
-        padding: 1.5rem;
+        padding: 1rem;
         animation: pulse 3s infinite;
         text-decoration: none;
+        // margin-top: 3rem;
       }
-      
-  
+
       .scrollArrow:hover{
         opacity: 0.7;
-        // border:8none;
-
       }
-    
-      // .scrollArrow::before{
-      //   position: absolute;
-      //   top: 3rem;
-      //   left: 0;
-      //   z-index: -1;
-      //   content: '';
-      //   width: 44px;
-      //   height: 44px;
-      //   box-shadow: 0 0 0 0 rgba(212, 63, 82, 0.4);
-      //   border-radius: 100%;
-      //   animation: pulse 3s infinite;
-      // }
       
       @keyframes pulse {
           0%, 100%{
               border: none;
           }
-          // 15%, 45%{
-              // opacity: 1;
-          // }
           50%{
-              box-shadow: 0 0 0 30px rgba(212, 63, 82, 0.4);
-              // opacity: 0;
-              border-radius: 1px solid $accent-color;
+            box-shadow: 0 0 0 30px rgba(212, 63, 82, 0.4);
+            border-radius: 1px solid $accent-color;
           }
       }
-  
+
       h1 {
         border: 2px solid $accent-color;
         border-radius: 10px;
@@ -169,25 +147,25 @@ body {
         letter-spacing: 6px;
         padding: 25px 35px;
         transition: all 0.5s ease;
-        // z-index: 1;
-  
+        cursor:default;
+
         &:hover {
           background-color: $accent-color;
           color: #ffffff;
         }
       }
-  
+
       h2 {
         padding-bottom: 10px;
       }
-  
+
       .mainBtnsWrapper {
         display: flex;
         gap: 20px;
         flex-wrap: wrap;
         align-items: center;
         justify-content: center;
-  
+
         .btn {
           background: transparent;
           border: 2px solid $accent-color;
@@ -198,30 +176,30 @@ body {
           height: 60px;
           padding-top: 18px;
           transition: all 0.4s ease-in-out;
-  
+
           &:hover {
             background: $accent-color;
             border-color: transparent;
           }
         }
       }
-  
+
       .contactLinks {
         display: flex;
         gap: 20px;
-  
+
         div {
           height: 40px;
           background-color: white;
           border-radius: 50%;
           border: 2px solid white;
-  
+
           &:hover {
             transform: scale(1.2);
             background-color: $accent-color;
             border: 2px solid $accent-color;
           }
-  
+
           img {
             height: 100%;
           }
@@ -237,46 +215,46 @@ body {
       margin-bottom: 50px;
       color: $accent-color;
     }
-  
+
     h3 {
       text-align: center;
       margin-bottom: 30px;
       padding: 0;
       color: white;
     }
-  
+
     h4 {
       padding: 0;
       margin-bottom: 20px;
     }
-  
+
     .resumeLinkWrapper {
       text-align: center;
     }
   }
-  
+
   #skills {
     font-weight: bold;
-  
+
     .skillsTitle {
       margin-bottom: 50px;
       display: flex;
       align-items: center;
       justify-content: center;
     }
-  
+
     .skillItems {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
       place-items: center;
     }
-  
+
     h2 {
       color: $accent-color;
       text-align: center;
       margin: 0;
     }
-  
+
     .skill {
       width: 200px;
       display: flex;
@@ -290,18 +268,18 @@ body {
       }
     }
   }
-  
+
   #projects {
     text-align: center;
     color: white;
-  
+
     .project {
       background-color: rgba(63, 71, 80, 0.4);
       backdrop-filter: blur(5px); 
       padding: 1.5rem; 
       border-radius: 10px;
       box-shadow: 10px 10px 5px 0px $accent-color;
-  
+
       &:hover  {
         cursor: pointer;
         background-color: rgba(63, 71, 80, 0.9);
@@ -312,36 +290,36 @@ body {
         border-bottom: 3px solid #d43f52;
       }  
     }
-  
+
     h2 {
       color: $accent-color;
     }
-  
+
     p {
       text-align: left;
     }
-  
+
     .projectImg {
       width: 100%;
       height: 100%;
     }
-  
+
     a {
       display: flex;
       gap: 5px;
       align-items: center;
       justify-content: center;
       font-weight: bold;
-  
+
       > img {
         height: 1.2rem;
       }
     }
-  
+
     .icon {
       height: 30px;
     }
-  
+
     .techIcons {
       display: flex;
       flex-wrap: wrap;
@@ -349,7 +327,7 @@ body {
       align-items: center;
       justify-content: center;
     }
-  
+
     .projectLinks {
       display: flex;
       gap: 20px;
@@ -370,24 +348,24 @@ body {
     align-items: center;
     justify-content: center;
     gap: 20px;
-  
+
     .contactLinks {
       display: flex;
       gap: 20px;
     }
-  
+
     .contactLinks div {
       height: 40px;
       background-color: white;
       border-radius: 50%;
       border: 2px solid white;
-  
+
       &:hover {
         transform: scale(1.2);
         background-color: $accent-color;
         border: 2px solid $accent-color;
       }
-  
+
       img {
         height: 100%;
       }
@@ -398,32 +376,28 @@ body {
 
 
 
-
-
-
-
-
-
-
-
-
-
 .modalSize {
-  max-width: 80%; /* Adjust the maximum width as needed */
-  width: 100%; /* Allow the modal content to expand to its parent's width */
-  // max-height: 80vh; /* Adjust the maximum height as needed */
-  // overflow-y: auto; 
+  max-width: 90%;
+  width: 100%;
  
 
   img  {
-    width: 100%; /* Ensure images resize to fit the modal content */
-    height: auto; /* Maintain aspect ratio */
+    width: 100%;
+    height: auto;
   }
 
   .modal-content {
     background-color: $primary-color;
-    padding: 2rem;
+    padding: 1rem;
     border-radius: 8px;
+    position: relative;
+
+    .close {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      color: white;
+    }
     
     .btn > img {
       max-height: 20px;
@@ -433,7 +407,23 @@ body {
 
     .modal-header {
       border-bottom: 1px solid #d43f52;
+      gap: 1.5rem;
+
+
+      .techIcons {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 15px;
+
+        img {
+          height: 30px;
+          width: auto;
+        }
+      }
     }
+
 
     .modal-footer {
       display: flex;
@@ -442,11 +432,7 @@ body {
       justify-content: center;
       border-top: 1px solid #d43f52;
     }
-
-    
   }
-
-
 }
 
 
