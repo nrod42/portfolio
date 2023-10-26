@@ -110,3 +110,20 @@ navLinks.forEach(link => {
     });
 });
 
+const projectContainers = document.querySelectorAll(".project");
+
+projectContainers.forEach((container) => {
+  const seeMoreLink = container.querySelector(".see-more-link");
+  
+  container.addEventListener('click', (e) => {
+    // Check if the click target is the "See More" link or anywhere within the project container
+    if (e.target === seeMoreLink || container.contains(e.target)) {
+      e.preventDefault();
+      const additionalContent = container.querySelectorAll(".additional-content");
+      additionalContent.forEach((additional) => {
+        additional.classList.toggle("expanded")
+      })
+      
+    }
+  });
+});

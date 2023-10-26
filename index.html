@@ -13,21 +13,19 @@
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+		<link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
 
-		<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+
+		<link rel="shortcut icon" href="/favicon.webp" type="image/png">
 		<link rel="stylesheet" href="css/styles.css">
 		
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js" defer></script>
 		<script src="./js/index.js" defer></script>
-		<link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
 
 		<!-- Bootstrap JS / JQuery -->
 		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous" defer></script>
 		<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous" defer></script>
-
 	</head>
-
-	
 
 	<body>
 		<nav class="navbar navbar-expand-lg navbar-dark">
@@ -139,11 +137,11 @@
 			<section id="projects" class="container mt-5 mb-5">
 				<h2 class="mb-5">PROJECTS</h2>
 				<!-- TV/Movie Tracker -->
-				<div class="row mb-4 justify-content-center align-items-center" data-toggle="modal" data-target="#trackerModal">
+				<div class="row mb-4 justify-content-center align-items-center" >
 					<div class="col-lg-12 mb-4 d-flex">
 						<div class="project d-flex flex-column">
 							<h4 class="mb-4">TV/Movie Tracker</h4>
-							<div class="mb-4 techIcons">
+							<div class="row mb-4 techIcons">
 								<img class="icon" src="./images/react-logo.svg" alt="react logo">
 								<img class="icon" src="./images/nodejs-logo.svg" alt="node.js logo">
 								<img class="icon" src="./images/express-logo.png" alt="express logo" style="background-color: white; padding: 5px;">
@@ -155,17 +153,29 @@
 							</div>
 							<div class="row">
 								<div class="col-lg-5 d-flex flex-column justify-content-center">
-									<img src="./images/track-homepage.png" class="projectImg mb-4" alt="project img">
+									<div class="mb-4">
+										<img src="./images/track-homepage.png" class="projectImg" alt="project img">
+									</div>
+									<div class="mb-4 additional-content">
+										<img src="./images/track-homepage-2.png" class="projectImg" alt="project img">
+									</div>
 								</div>
-								<div class="col-lg-7 mb-4">
-									<p>
+								<div class="col-lg-7">
+									<p class="mb-4">
 										The TV Show/Movie Tracker is a React-based web application developed using React/JS, Bootstrap/CSS, and HTML.
 										It leverages the TMDB API to fetch and display TV shows and movies, providing users with an immersive browsing experience.
 										The project showcases strong technical skills in front-end development, including interactive media cards, personalized watch lists, and real-time search functionality.
 									</p>
+									<p class="additional-content">
+										On the backend, the application incorporates Node.js, Express, and MongoDB.
+										User watch lists are securely stored in MongoDB, allowing users to save and organize their favorite shows and movies.
+										The implementation includes user registration and login functionality, utilizing bcrypt for password hashing and JSON Web Tokens for secure authentication and authorization.
+										This ensures privacy and data protection for user accounts.
+									</p>
 								</div>
 							</div>
-							<div class="mb-4 projectLinks">
+							<a class="row mb-4 see-more-link">See More</a>
+							<div class="row mb-4 projectLinks">
 								<a class="btn btn-danger" href="https://nrod42.github.io/tv-show-tracker/" role="button" target="_blank">
 									<img src="./images/link.webp" alt="website link icon">
 									Live Site
@@ -178,6 +188,7 @@
 						</div>
 					</div>
 				</div>
+				
 				<!-- Blog Site -->
 				<div class="row mb-4 justify-content-center align-items-center" data-toggle="modal" data-target="#blogModal">
 					<div class="col-lg-12 mb-4 d-flex">
@@ -194,19 +205,30 @@
 								<img class="icon" src="./images/css-logo.svg" alt="css logo">
 							</div>
 							<div class="row">
-								<div class=" col-lg-5 mb-4 d-flex flex-column justify-content-center">
-									<img src="./images/mern-blog-homepage.png" class="projectImg mb-4" alt="project screenshot">
+								<div class="col-lg-5 d-flex flex-column justify-content-center">
+									<div class="mb-4">
+										<img src="./images/mern-blog-homepage.png" class="projectImg mb-4" alt="project screenshot">
+									</div>
+									<div class="mb-4 additional-content">
+										<img src="./images/mern-blog-homepage-2.png" class="projectImg" alt="project img">
+									</div>
 								</div>
-								<div class="col-lg-7 mb-4">
-									<p>
+								<div class="col-lg-7">
+									<p class="mb-4">
 										The Blog Site project is a dynamic and interactive full-stack blogging platform that offers seamless content management and engagement.
 										Built with React on the frontend, the application provides a responsive and intuitive user interface for effortless blog creation and management.
 										Users can easily create, read, update, and delete blog posts using rich text editing capabilities and image uploading.
 										Additionally, the site provides personalized profiles for users to conveniently manage their information and access their posts.
 									</p>
+									<p class="additional-content">
+										On the backend, the site leverages MongoDB for data storage and integrates Express and Node.js to handle server-side functionalities.
+										MongoDB's robust text indexing feature is utilized to provide efficient content discovery through the platform's search functionality.
+										User registration and authentication are implemented using bcrypt for password hashing and JSON Web Tokens for secure user authorization, ensuring privacy, data protection, and secure access to the platform.
+									</p>
 								</div>
 							</div>
-							<div class="mb-4 projectLinks">
+							<a class="row mb-4 see-more-link" href="#">See More</a>
+							<div class="row mb-4 projectLinks">
 								<a class="btn btn-danger" href="https://mernblog-2g36.onrender.com/" role="button" target="_blank">
 									<img src="./images/link.webp" alt="website link icon">
 									Live Site
@@ -220,9 +242,9 @@
 					</div>
 				</div>
 			
-				<div class="row mb-4">
+				<div class="row mb-4 d-flex">
 					<!-- Shopping Site -->
-					<div class="col-lg-6 mb-4">
+					<div class="col-lg-6 mb-5 d-flex justify-content-between">
 						<div class="project">
 							<h4 class="mb-4">Shopping Site</h4>
 							<div class="mb-4">
@@ -254,7 +276,7 @@
 						</div>
 					</div>
 					<!-- Resume Builder -->
-					<div class="col-lg-6">
+					<div class="col-lg-6 mb-5">
 						<div class="project">
 							<h4 class="mb-4">Resume Builder</h4>
 							<div class="mb-4">
@@ -344,129 +366,3 @@
 		</footer>
 	</body>
 </html>
-
-
-
-
-<!-- Modals -->
-
-<!-- Tracker -->
-<div class="modal fade" id="trackerModal">
-	<div class="d-flex justify-content-center">
-		<div class="modal-dialog modalSize">
-			<div class="modal-content">
-				<!-- Modal Header -->
-				<button type="button" class="close" data-dismiss="modal">&times;</button>
-				<div class="modal-header d-flex flex-column justify-content-center align-items-center">
-					<h4 class="modal-title">TV/Movie Tracker</h4>
-					
-					<div class="techIcons">
-						<img class="icon" src="./images/react-logo.svg" alt="React Icon">
-						<img class="icon" src="./images/nodejs-logo.svg" alt="Node.js">
-						<img class="icon" src="./images/express-logo.png" alt="Express Icon" style="background-color: white; padding: 3px;">
-						<img class="icon" src="./images/mongodb-logo.svg" alt="MongoDB Icon" style="background-color: white; border-radius: 50%; padding: 3px;">
-						<img class="icon" src="./images/bootstrap-logo.svg" alt="bootstrap logo" >
-						<img class="icon" src="./images/js-logo.svg" alt="Javascript Icon">
-						<img class="icon" src="./images/html-logo.svg" alt="html logo" >
-						<img class="icon" src="./images/css-logo.svg" alt="css logo" >
-					</div>
-				</div>
-				<!-- Modal body -->
-				<div class="modal-body">
-					<div class="row">
-						<div class="col-lg-4 d-flex flex-column justify-content-center">
-							<a class="mb-4" href="https://nrod42.github.io/tv-show-tracker/" target="_blank"><img src="./images/track-homepage.png" class="projectImg" alt="project img"></a>
-							<a class="mb-4" href="https://nrod42.github.io/tv-show-tracker/" target="_blank"><img src="./images/track-homepage-2.png" class="projectImg" alt="project img"></a>
-						</div>
-						<div class="col-lg-8 mb-4">
-							<p>
-								The TV Show/Movie Tracker is a React-based web application developed using React/JS, Bootstrap/CSS, and HTML.
-								It leverages the TMDB API to fetch and display TV shows and movies, providing users with an immersive browsing experience.
-								The project showcases strong technical skills in front-end development, including interactive media cards, personalized watch lists, and real-time search functionality.
-							</p>
-							<p>
-								On the backend, the application incorporates Node.js, Express, and MongoDB.
-								User watchlists are securely stored in MongoDB, allowing users to save and organize their favorite shows and movies.
-								The implementation includes user registration and login functionality, utilizing bcrypt for password hashing and JSON Web Tokens for secure authentication and authorization.
-								This ensures privacy and data protection for user accounts.
-							</p>
-						</div>
-					</div>
-				</div>
-				<!-- Modal footer -->
-				<div class="modal-footer">
-						<a class="btn btn-danger" href="https://nrod42.github.io/tv-show-tracker/" role="button" target="_blank">
-							<img src="./images/link.webp" alt="Link Icon">Live Site
-						</a>
-						<a class="btn btn-danger" href="https://github.com/nrod42/tv-show-tracker" role="button" target="_blank">
-							<img src="./images/github-logo.webp" alt="GitHub Icon">Source Code
-						</a>
-					<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-				</div>
-			</div>
-		</div>
-	</div>
-</div>
-
-<!-- Blog -->
-<div class="modal fade" id="blogModal">
-	<div class="d-flex justify-content-center">
-		<div class="modal-dialog modalSize">
-			<div class="modal-content">
-				<!-- Modal Header -->
-				<div class="modal-header d-flex flex-column justify-content-center align-items-center">
-					<h4 class="modal-title">Blog Site</h4>
-					<button type="button" class="close" data-dismiss="modal">&times;</button>
-					<div class="techIcons">
-						<img class="icon" src="./images/react-logo.svg" alt="React Icon">
-						<img class="icon" src="./images/nodejs-logo.svg" alt="Node.js">
-						<img class="icon" src="./images/express-logo.png" alt="Express Icon" style="background-color: white; padding: 3px;">
-						<img class="icon" src="./images/mongodb-logo.svg" alt="MongoDB Icon" style="background-color: white; border-radius: 50%; padding: 3px;">
-						<img class="icon" src="./images/bootstrap-logo.svg" alt="bootstrap logo" >
-						<img class="icon" src="./images/js-logo.svg" alt="Javascript Icon">
-						<img class="icon" src="./images/html-logo.svg" alt="html logo" >
-						<img class="icon" src="./images/css-logo.svg" alt="css logo" >
-					</div>
-				</div>
-				<!-- Modal body -->
-				<div class="modal-body">
-					<div class="row">
-						<div class="col-lg-4 d-flex flex-column justify-content-center"">
-							<a class="mb-4" href="https://mernblog-2g36.onrender.com/" target="_blank">
-								<img src="./images/mern-blog-homepage.png" class="projectImg" alt="project img">'
-							</a>
-							<a class="mb-4" href="https://mernblog-2g36.onrender.com/" target="_blank">
-								<img src="./images/mern-blog-homepage-2.png" class="projectImg" alt="project img">
-							</a>
-						</div>
-						<div class="col-lg-8 mb-4">
-							<p>
-								The Blog Site project is a dynamic and interactive full-stack blogging platform that offers seamless content management and engagement.
-								Built with React on the frontend, the application provides a responsive and intuitive user interface for effortless blog creation and management.
-								Users can easily create, read, update, and delete blog posts using rich text editing capabilities and image uploading.
-								Additionally, the site provides personalized profiles for users to conveniently manage their information and access their posts.
-							</p>
-							<p>
-								On the backend, the site leverages MongoDB for data storage and integrates Express and Node.js to handle server-side functionalities.
-								MongoDB's robust text indexing feature is utilized to provide efficient content discovery through the platform's search functionality.
-								User registration and authentication are implemented using bcrypt for password hashing and JSON Web Tokens for secure user authorization, ensuring privacy, data protection, and secure access to the platform.
-							</p>
-						</div>
-					</div>
-				</div>
-				<!-- Modal footer -->
-				<div class="modal-footer">
-					<a class="btn btn-danger" href="https://mernblog-2g36.onrender.com/" role="button" target="_blank">
-						<img src="./images/link.webp" alt="Link Icon">
-						Live Site
-					</a>
-					<a class="btn btn-danger" href="https://github.com/nrod42/mern-blog" role="button" target="_blank">
-						<img src="./images/github-logo.webp" alt="GitHub Icon">
-						Source Code
-					</a>
-					<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-				</div>
-			</div>
-		</div>
-	</div>
-</div>

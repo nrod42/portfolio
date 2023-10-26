@@ -191,10 +191,13 @@ body {
       backdrop-filter: blur(5px);
       padding: 1.5rem;
       border-radius: 10px;
-      box-shadow: 10px 10px 5px 0px #d43f52; }
+      box-shadow: 10px 10px 5px 0px #d43f52;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between; }
       body #projects .project:hover {
-        cursor: pointer;
-        background-color: rgba(63, 71, 80, 0.9); }
+        filter: brightness(95%);
+        cursor: pointer; }
       body #projects .project h4 {
         padding-bottom: 10px;
         border-bottom: 3px solid #d43f52; }
@@ -227,6 +230,17 @@ body {
       align-items: center;
       justify-content: center;
       margin-top: auto; }
+    body #projects .additional-content {
+      max-height: 0px;
+      overflow: hidden;
+      transition: max-height 0.4s ease; }
+      body #projects .additional-content.expanded {
+        max-height: 1000px; }
+    body #projects .see-more-link {
+      cursor: pointer;
+      color: #d43f52; }
+      body #projects .see-more-link:hover {
+        text-decoration: underline; }
   body footer {
     background-color: #000;
     background-size: contain;
@@ -251,42 +265,3 @@ body {
         border: 2px solid #d43f52; }
       body footer .contactLinks div img {
         height: 100%; }
-
-.modalSize {
-  max-width: 90%;
-  width: 100%; }
-  .modalSize img {
-    width: 100%;
-    height: auto; }
-  .modalSize .modal-content {
-    background-color: #002333;
-    padding: 1rem;
-    border-radius: 8px;
-    position: relative; }
-    .modalSize .modal-content .close {
-      position: absolute;
-      top: 10px;
-      right: 10px;
-      color: white; }
-    .modalSize .modal-content .btn > img {
-      max-height: 20px;
-      width: auto;
-      padding-right: 5px; }
-    .modalSize .modal-content .modal-header {
-      border-bottom: 1px solid #d43f52;
-      gap: 1.5rem; }
-      .modalSize .modal-content .modal-header .techIcons {
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-start;
-        align-items: center;
-        gap: 15px; }
-        .modalSize .modal-content .modal-header .techIcons img {
-          height: 30px;
-          width: auto; }
-    .modalSize .modal-content .modal-footer {
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      justify-content: center;
-      border-top: 1px solid #d43f52; }
