@@ -74,6 +74,7 @@ particlesJS("particles", {
   retina_detect: true,
 });
 
+
 // Check if the Bootstrap navigation is open or closed
 let isNavOpen = false;
 
@@ -113,17 +114,20 @@ navLinks.forEach(link => {
 const projectContainers = document.querySelectorAll(".project");
 
 projectContainers.forEach((container) => {
-  const seeMoreLink = container.querySelector(".see-more-link");
+  const showMoreLink = container.querySelector(".show-more-link");
   
   container.addEventListener('click', (e) => {
-    // Check if the click target is the "See More" link or anywhere within the project container
-    if (e.target === seeMoreLink || container.contains(e.target)) {
+    // Check if the click target is the "Show More" link or anywhere within the project container
+    if (e.target === showMoreLink || container.contains(e.target)) {
       e.preventDefault();
+
       const additionalContent = container.querySelectorAll(".additional-content");
       additionalContent.forEach((additional) => {
         additional.classList.toggle("expanded")
+        showMoreLink.textContent = additional.classList.contains("expanded") ? "Show Less" : "Show More";
       })
       
+
     }
   });
 });

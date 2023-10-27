@@ -1,6 +1,5 @@
 $primary-color: #002333;
 $accent-color: #d43f52;
-$font-size: 18px;
 
 * {
   box-sizing: border-box;
@@ -12,6 +11,9 @@ $font-size: 18px;
 
 html {
   scroll-behavior: smooth;
+  font-size: 18px;
+overflow-x: hidden;
+width: 100%;
 }
 
 h1, h2, h3, h4, h5 {
@@ -30,7 +32,6 @@ h2::after {
 }
 
 body {
-  font-size: $font-size;
   font-weight: 800;
   overflow-x: hidden;
   position: relative;
@@ -78,32 +79,41 @@ body {
     position: relative;
     overflow: hidden;
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
+    height: auto;
     padding-top: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
     #particles {
       position: absolute;
       top: 0;
       left: 0;
-      width: 100%;
+      width: 100vw;
+      min-height: 100vh;
       height: 100%;
       background: #1a1a1a;
     }
 
     .homeWrapper {
       text-align: center;
-      max-width: 100%;
-      padding: 3rem;
-      height: 100%;
+      width: 100vw;
+      padding: 0 3rem;
+      min-height: 100vh;
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
       gap: 3rem;
+      margin: 50px 0;
 
       * {
         z-index: 1;
+        margin: 0;
       }
+
+    
 
       .bx.bx-chevrons-down {
         color: $accent-color;
@@ -140,14 +150,16 @@ body {
       }
 
       h1 {
-        border: 2px solid $accent-color;
+        border: 0.3vw solid $accent-color;
         border-radius: 10px;
         color: $accent-color;
         display: inline-block;
         letter-spacing: 6px;
-        padding: 25px 35px;
+        margin: 0;
+        padding: 1.5rem 1.5rem;
         transition: all 0.5s ease;
         cursor:default;
+        // font-size: 1.5rem;
 
         &:hover {
           background-color: $accent-color;
@@ -156,7 +168,7 @@ body {
       }
 
       h2 {
-        padding-bottom: 10px;
+        // font-size: 1.3rem;
       }
 
       .mainBtnsWrapper {
@@ -166,16 +178,21 @@ body {
         align-items: center;
         justify-content: center;
 
-        .btn {
+        a {
           background: transparent;
           border: 2px solid $accent-color;
           color: #ffffff;
           font-size: 1rem;
           font-weight: bold;
-          width: 180px;
-          height: 60px;
-          padding-top: 18px;
+          width: 10rem;
+          height: 3.1rem;
+          padding: 0;
           transition: all 0.4s ease-in-out;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+
 
           &:hover {
             background: $accent-color;
@@ -282,6 +299,7 @@ body {
       display: flex;
       flex-direction: column;
       justify-content: space-between;
+      width: 100%;
       
       &:hover {
         filter: brightness(95%);
@@ -320,7 +338,9 @@ body {
     }
 
     .icon {
-      height: 30px;
+      height: 2vw;
+      min-height: 1.5rem;
+      width: auto;
     }
 
     .techIcons {
@@ -349,7 +369,7 @@ body {
       }
     }
   
-    .see-more-link {
+    .show-more-link {
       cursor: pointer;
       color: $accent-color;
       &:hover {
@@ -359,7 +379,6 @@ body {
   }
 
   footer {
-    // background-image: url('/images/night-sky-background.jpg');
     background-color: #000;
     background-size: contain;
     padding-top: 40px;

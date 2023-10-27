@@ -6,7 +6,10 @@
   font-family: 'Poppins', sans-serif; }
 
 html {
-  scroll-behavior: smooth; }
+  scroll-behavior: smooth;
+  font-size: 18px;
+  overflow-x: hidden;
+  width: 100%; }
 
 h1, h2, h3, h4, h5 {
   color: #f2efea;
@@ -22,7 +25,6 @@ h2::after {
   background: #d43f52; }
 
 body {
-  font-size: 18px;
   font-weight: 800;
   overflow-x: hidden;
   position: relative;
@@ -51,27 +53,34 @@ body {
     position: relative;
     overflow: hidden;
     width: 100%;
-    height: 100vh;
-    padding-top: 3rem; }
+    min-height: 100vh;
+    height: auto;
+    padding-top: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
     body #home #particles {
       position: absolute;
       top: 0;
       left: 0;
-      width: 100%;
+      width: 100vw;
+      min-height: 100vh;
       height: 100%;
       background: #1a1a1a; }
     body #home .homeWrapper {
       text-align: center;
-      max-width: 100%;
-      padding: 3rem;
-      height: 100%;
+      width: 100vw;
+      padding: 0 3rem;
+      min-height: 100vh;
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      gap: 3rem; }
+      gap: 3rem;
+      margin: 50px 0; }
       body #home .homeWrapper * {
-        z-index: 1; }
+        z-index: 1;
+        margin: 0; }
       body #home .homeWrapper .bx.bx-chevrons-down {
         color: #d43f52;
         font-size: 2rem; }
@@ -97,36 +106,39 @@ body {
     box-shadow: 0 0 0 30px rgba(212, 63, 82, 0.4);
     border-radius: 1px solid #d43f52; } }
       body #home .homeWrapper h1 {
-        border: 2px solid #d43f52;
+        border: 0.3vw solid #d43f52;
         border-radius: 10px;
         color: #d43f52;
         display: inline-block;
         letter-spacing: 6px;
-        padding: 25px 35px;
+        margin: 0;
+        padding: 1.5rem 1.5rem;
         transition: all 0.5s ease;
         cursor: default; }
         body #home .homeWrapper h1:hover {
           background-color: #d43f52;
           color: #ffffff; }
-      body #home .homeWrapper h2 {
-        padding-bottom: 10px; }
       body #home .homeWrapper .mainBtnsWrapper {
         display: flex;
         gap: 20px;
         flex-wrap: wrap;
         align-items: center;
         justify-content: center; }
-        body #home .homeWrapper .mainBtnsWrapper .btn {
+        body #home .homeWrapper .mainBtnsWrapper a {
           background: transparent;
           border: 2px solid #d43f52;
           color: #ffffff;
           font-size: 1rem;
           font-weight: bold;
-          width: 180px;
-          height: 60px;
-          padding-top: 18px;
-          transition: all 0.4s ease-in-out; }
-          body #home .homeWrapper .mainBtnsWrapper .btn:hover {
+          width: 10rem;
+          height: 3.1rem;
+          padding: 0;
+          transition: all 0.4s ease-in-out;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center; }
+          body #home .homeWrapper .mainBtnsWrapper a:hover {
             background: #d43f52;
             border-color: transparent; }
       body #home .homeWrapper .contactLinks {
@@ -194,7 +206,8 @@ body {
       box-shadow: 10px 10px 5px 0px #d43f52;
       display: flex;
       flex-direction: column;
-      justify-content: space-between; }
+      justify-content: space-between;
+      width: 100%; }
       body #projects .project:hover {
         filter: brightness(95%);
         cursor: pointer; }
@@ -217,7 +230,9 @@ body {
       body #projects a > img {
         height: 1.2rem; }
     body #projects .icon {
-      height: 30px; }
+      height: 2vw;
+      min-height: 1.5rem;
+      width: auto; }
     body #projects .techIcons {
       display: flex;
       flex-wrap: wrap;
@@ -236,10 +251,10 @@ body {
       transition: max-height 0.4s ease; }
       body #projects .additional-content.expanded {
         max-height: 1000px; }
-    body #projects .see-more-link {
+    body #projects .show-more-link {
       cursor: pointer;
       color: #d43f52; }
-      body #projects .see-more-link:hover {
+      body #projects .show-more-link:hover {
         text-decoration: underline; }
   body footer {
     background-color: #000;
