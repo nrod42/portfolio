@@ -230,8 +230,7 @@ body {
       body #projects a > img {
         height: 1.2rem; }
     body #projects .icon {
-      height: 2vw;
-      min-height: 1.5rem;
+      height: 25px;
       width: auto; }
     body #projects .techIcons {
       display: flex;
@@ -252,7 +251,6 @@ body {
       body #projects .additional-content.expanded {
         max-height: 1000px; }
     body #projects .show-more-link {
-      cursor: pointer;
       color: #d43f52; }
       body #projects .show-more-link:hover {
         text-decoration: underline; }

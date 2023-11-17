@@ -338,8 +338,7 @@ body {
     }
 
     .icon {
-      height: 2vw;
-      min-height: 1.5rem;
+      height: 30px;
       width: auto;
     }
 
@@ -370,7 +369,7 @@ body {
     }
   
     .show-more-link {
-      cursor: pointer;
+      // cursor: pointer;
       color: $accent-color;
       &:hover {
         text-decoration: underline;

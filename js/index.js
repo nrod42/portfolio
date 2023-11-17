@@ -111,23 +111,23 @@ navLinks.forEach(link => {
     });
 });
 
-const projectContainers = document.querySelectorAll(".project");
+// const projectContainers = document.querySelectorAll(".project");
 
-projectContainers.forEach((container) => {
-  const showMoreLink = container.querySelector(".show-more-link");
+// projectContainers.forEach((container) => {
+//   const showMoreLink = container.querySelector(".show-more-link");
   
-  container.addEventListener('click', (e) => {
-    // Check if the click target is the "Show More" link or anywhere within the project container
-    if (e.target === showMoreLink || container.contains(e.target)) {
-      e.preventDefault();
+//   container.addEventListener('click', (e) => {
+//     // Check if the click target is the "Show More" link or anywhere within the project container
+//     if (e.target === showMoreLink || container.contains(e.target)) {
+//       e.preventDefault();
 
-      const additionalContent = container.querySelectorAll(".additional-content");
-      additionalContent.forEach((additional) => {
-        additional.classList.toggle("expanded")
-        showMoreLink.textContent = additional.classList.contains("expanded") ? "Show Less" : "Show More";
-      })
+//       const additionalContent = container.querySelectorAll(".additional-content");
+//       additionalContent.forEach((additional) => {
+//         additional.classList.toggle("expanded")
+//         showMoreLink.textContent = additional.classList.contains("expanded") ? "Show Less" : "Show More";
+//       })
       
 
-    }
-  });
-});
+//     }
+//   });
+// });
